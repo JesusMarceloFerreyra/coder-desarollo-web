@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vive Bien - Contacto</title>
+    <link rel="shortcut icon" href="multimedia/logo.jpg" type="image/x-icon">  
+    <!----------FUENTES---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <!--MUEVO EL LINK DE CSS AL CIERRE DEL HEAD COMO ME RECOMENDASTE-->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+<body class="bodyContacto">
+    <header class="header">
+        <nav class="menu">
+            <a href="../index.html"><img class="logo" src="../multimedia/logo.jpg" alt="Logo"></a>   
+            <!-- CORRIJO EL MENU DE LA ENTREGA PASADA -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <main class="mainContacto">
+            <form class="formulario">
+                <p class="contactanos">Nos gustaria saber más de vos..</p>
+                <div class="textoContacto">
+                    <p>Si queres información sobre cualquiera
+                        de nuestros productos o estás interesado en su distribución, 
+                        rellena nuestro formulario y nos pondremos en contacto con vos
+                        lo antes posible. ¡Muchas Gracias por Visitarnos! Escribinos.. 
+                        <a href="https://www.whatsapp.com/" target="_blank">Whatsapp</a></p> 
+                </div>
+                <div class="nombre">
+                    <label for="nombre"></label>
+                    <input class="estiloInput" type="text" placeholder=" Nombre" name="nombre" required>
+                </div>
+                <div class="email">
+                    <label for="email"></label>
+                    <input class="estiloInput" type="email" name="email" placeholder=" Email" required>
+                </div>
+                <div class="telefono">
+                    <label for="telefono"></label>
+                    <input class="estiloInput" type="text" placeholder=" Telefono" name="telefono">
+                </div>
+                <div class="mensaje">    
+                    <label for="mensaje"></label>
+                    <textarea class="estiloInput" name="mensaje" cols="30" rows="10"> Mensaje </textarea>
+                </div>
+                <div class="condicion1">
+                    <label for="condicion1">Recibir Promociones por Email </label>
+                    <input type="checkbox" name="condicion1" checked>
+                </div>
+                <div class="condicion2">
+                    <label for="condicion2">Recibir Promociones por Whatsapp </label>
+                    <input type="checkbox" name="condicion2" checked>
+                </div>
+                <div class="botones">
+                    <input class="botonLimpiar" type="reset" value=" Limpiar ">
+                </div>
+                <div class="botones">    
+                    <input class="botonEnviar"type="submit" value=" Enviar ">
+                </div>
+            </form>
+        <a class="extra" href="../index.html">Volver a Home</a></li>
+    </main>
+    <footer class="footer">
+        <ul class="nosotros">
+            <li><h3><strong>SOBRE ¡VIVE BIEN!</strong></h3></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        <ul class="redes">
+            <li><h3><strong>SEGUINOS EN LAS REDES SOCIALES</strong></h3></li>
+            <li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
+        </ul>
+        <ul class="newsletter">
+            <li><h3><strong>SUMATE A LA COMUNIDAD</strong></h3></li>
+            <li>REGISTRATE A NUESTRO SERVICIO DE NEWSLETTER Y ACCEDE A BENEFICIOS EXCLUSIVOS.</li>
+            <li><label for="email"></label>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="submit" value="Enviar"></li>
+        </ul>         
+        <p class="copy">© Desarrollado por Jesus Ferreyra</p>
+        <img class="tarjetas" src="../multimedia/tarjetas.png" alt="tarjetas">
+    </footer>
+    <aside>
+        <a href="https://www.whatsapp.com/" target="_blank"><img class="whatsapp" src="../multimedia/whatsapp.jpg" alt=""></a>
+    </aside>
+</body>
+</html>

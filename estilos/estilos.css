@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*---------------ESTILOS INDEX---------------*/
+/*---------------GRILLA GENERAL DE TODO EL BODY---------------*/
+.bodyHome{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section"
+    "footer";
+}
+/*---------------ESTILOS HEADER---------------*/
+.header{
+    grid-area: header;
+    position: sticky; /* QUE SE MANTENGA DURANTE TODO EL SCROLL */
+    top: 0;
+    z-index: 10;
+}
+.menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(80, 200, 215);
+    border-color: black;
+    border-width: 0.3rem 0;
+    border-style: solid;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu li{
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    padding: 2rem 6rem;
+}
+.menu li:hover{
+    background-color: rgba(255, 255, 0, 0.8)
+}
+.logo{
+    width: 10rem;
+    height: 7rem;
+}
+/*---------------ESTILOS MAIN---------------*/
+.mainHome {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1.5fr;
+    grid-template-areas: /* DENTRO DEL MAIN HAGO UNA NUEVA GRILLA */
+    "bienvenida"
+    "masPedidos";
+}
+.bienvenida{
+    grid-area: bienvenida;
+}
+.fondoHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem 0;
+    width: 100%;
+    background: url(../multimedia/fondo.jpg);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: soft-light;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5rem;
+    color: white;
+}
+.tituloHome{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+.intro{
+    background-color: rgb(240, 240, 240);
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    padding: 5rem 0;
+    text-align: center;
+}
+.masPedidos{
+    grid-area: masPedidos;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.8fr 0.4fr;
+    grid-template-areas: /* TERCER GRILLA EN CADENA PARA ORDENAR MEJOR */
+    "titulo titulo titulo" /* DENTRO DE ESTA YA ORDENO A LOS HIJOS CON FLEX */
+    "imagen1 imagen2 imagen3"
+    "destacado1 destacado2 destacado3";
+    background-color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;
+}
+.masPedidos img{
+    width: 20rem;
+    height: 20rem;
+    border-color: black;
+    border-width: 0.1rem;
+    border-radius: 3%;
+    border-style: solid;
+}
+.masPedidos h3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;  
+}
+.subtituloHome{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.imagen1{
+    grid-area: imagen1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen2{
+    grid-area: imagen2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen3{
+    grid-area: imagen3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destacado1{
+    grid-area: destacado1;
+}
+.destacado2{
+    grid-area: destacado2;
+}
+.destacado3{
+    grid-area: destacado3;
+}
+/*---------------ESTILOS SECTION---------------*/
+.sectionHome{
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.2fr 0.2fr 1fr;
+    grid-template-areas: /* CREO ESTA GRILLA DENTRO DEL GRID AREA SECTION */
+    "ubicacion ubicacion" /* CENTRO TODOS LOS HIJOS CON PROPIEDAS DE GRIDS */
+    "sucursal1 sucursal2" /* NO UTILIZO FLEX */
+    "horario1 horario2"
+    "mapa1 mapa2";
+    background-color: rgb(240, 240, 240);
+    font-family: "Oswald", sans-serif;
+    line-height: 4rem;
+    justify-items: center;
+    align-items: center;
+}
+.sectionHome h2{
+    grid-area: ubicacion;
+    font-size: 3rem;
+}
+.sucursal1{
+    grid-area: sucursal1;
+    font-size: 2rem;
+    }
+.sucursal2{
+    grid-area: sucursal2;
+    font-size: 2rem;
+}
+.horario1{
+    grid-area: horario1;
+    font-size: 2rem;
+}
+.horario2{
+    grid-area: horario2;
+    font-size: 2rem;
+}
+.mapa1{
+    grid-area: mapa1;
+    width: 30rem;
+    height: 30rem;
+    padding: 3rem 0;
+}
+.mapa2{
+    grid-area: mapa2;
+    width: 30rem;
+    height: 30rem;
+    padding: 3rem 0;
+}
+/*---------------ESTILOS FOOTER---------------*/
+.footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr;
+    grid-template-areas: /* MISMO CASO QUE SECTION Y MAIN */
+    "nosotros redes newsletter" /* GRILLA DENTRO DE GRILLA */
+    "copyright tarjetas ."; /* NO USO FLEX */
+    background-color: rgb(80, 200, 215);
+    height: 25rem;
+    line-height: 4rem;
+    justify-items: center;
+
+}
+.footer a{
+    text-decoration: none;
+}
+.footer li{
+    list-style-type: none;
+}
+.footer ul{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;  
+}
+.nosotros{
+    grid-area: nosotros;
+    margin-top: 2rem;
+}
+.redes{
+    grid-area: redes;
+    margin-top: 2rem;
+}
+.newsletter{
+    grid-area: newsletter;
+    margin-top: 2rem;
+}
+.registro{
+    line-height: 2rem;
+
+}
+.copy{
+    grid-area: copyright;
+    justify-self: start;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
+.tarjetas{
+    grid-area: tarjetas;
+    display: flex;
+    justify-content: center;
+    width: 35rem;
+    height: 4rem;
+}
+/*---------------ESTILOS ASIDE---------------*/
+.whatsapp{
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    position: fixed; /* SE MANTIENE DURANTE TODO EL SCROLL COMO EL MENU */
+    right: 3rem;
+    bottom: 3rem;
+    border-color: chartreuse;
+    border-width: 0.1rem;
+    border-radius: 20%;
+    border-style: solid;
+}
+/*---------------ESTILOS PRODUCTOS---------------*/
+.mainProductos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.6fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "fotoArandanos fotoAlmohaditas fotoAlmendras"
+    "arandanos almohaditas almendras"
+    "fotoAvellanas fotoMixFrutos fotoAvena"
+    "avellanas mixFrutos avena"
+    "fotoPepas fotoGalletas fotoPastaMani"
+    "pepas galletas pastaMani";
+    justify-items: center;
+    align-items: center;
+}
+.tituloProductos{
+    grid-area: titulo;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 4rem; 
+}
+.mainProductos h3{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+.mainProductos img{
+    width: 20rem;
+    height: 20rem;
+    border-color: black;
+    border-width: 0.1rem;
+    border-radius: 3%;
+    border-style: solid;
+    margin: 3rem;
+}
+.fotoArandanos{
+    grid-area: fotoArandanos;
+}
+.fotoAlmohaditas{
+    grid-area: fotoAlmohaditas;
+}
+.fotoAlmendras{
+    grid-area: fotoAlmendras;
+}
+.fotoAvellanas{
+    grid-area: fotoAvellanas;
+}
+.fotoMixFrutos{
+    grid-area: fotoMixFrutos;
+}
+.fotoAvena{
+    grid-area: fotoAvena;
+}
+.fotoPepas{
+    grid-area: fotoPepas;
+}
+.fotoGalletas{
+    grid-area: fotoGalletas;
+}
+.fotoPastaMani{
+    grid-area: fotoPastaMani;
+}
+.arandanos{
+    grid-area: arandanos;
+}
+.almohaditas{
+    grid-area: almohaditas;
+}
+.almendras{
+    grid-area: almendras;
+}
+.avellanas{
+    grid-area: avellanas;
+}
+.mixFrutos{
+    grid-area: mixFrutos;
+}
+.avena{
+    grid-area: avena;
+}
+.pepas{
+    grid-area: pepas;
+}
+.galletas{
+    grid-area: galletas;
+}
+.pastaMani{
+    grid-area: pastaMani;
+}
+/*---------------ESTILOS PROMOCIONES---------------*/
+.mainPromos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: 
+    "titulo"
+    "promos";
+}
+.tituloPromos{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 4rem; 
+}
+.promociones{
+    grid-area: promos;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.8fr 0.4fr;
+    grid-template-areas:  
+    "fotoMani fotoLino fotoQuinoa"
+    "promo1 promo2 promo3"
+    "mas1 mas2 mas3";
+}
+.promociones img{
+    width: 20rem;
+    height: 20rem;
+    border-color: rgb(0, 0, 0);
+    border-width: 0.1rem;
+    border-radius: 3%;
+    border-style: solid;
+    margin: 2rem;
+}
+.promociones p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.7rem
+}
+.promociones a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+    font-size: 1.3rem
+
+}
+.fotoMani{
+    grid-area: fotoMani;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoLino{
+    grid-area: fotoLino;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoQuinoa{
+    grid-area: fotoQuinoa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promo1{
+    grid-area: promo1;
+}
+.promo2{
+    grid-area: promo2;
+}
+.promo3{
+    grid-area: promo3;
+}
+.mas1{
+    grid-area: mas1;
+}
+.mas2{
+    grid-area: mas2;
+}
+.mas3{
+    grid-area: mas3;
+}
+/*---------------ESTILOS NOSOTROS---------------*/
+.mainNosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: 
+    "titulo"
+    "parrafo";
+}
+.tituloNosotros{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+.parrafoNosotros{
+    grid-area: parrafo;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin: 5rem;
+}
+/*---------------ESTILOS CONTACTO---------------*/
+.mainContacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "formulario"
+    "extra";
+}
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 0.5fr 0.3fr 0.3fr 0.7fr 0.2fr 0.2fr;
+    grid-template-areas: 
+    "texto contactanos contactanos"
+    "texto nombre nombre"
+    "texto telefono email"
+    "texto mensaje mensaje"
+    "texto condicion1 condicion2"
+    "texto botonLimpiar botonEnviar";
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+.contactanos{
+    grid-area: contactanos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.textoContacto{
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    font-size: 2.3rem;
+}
+.estiloInput{
+    background-color: rgb(240, 240, 240);
+    border: outset;
+}
+.nombre{
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 3rem;
+}
+.email{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 3rem;
+}
+.telefono{
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 3rem;
+}
+.mensaje{
+    grid-area: mensaje;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 3rem;
+}
+.condicion1{
+    grid-area: condicion1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.condicion2{
+    grid-area: condicion2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonLimpiar{
+    grid-area: botonLimpiar;
+    font-size: 1.5rem;
+    border-color: black;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.botonEnviar{
+    grid-area: botonEnviar;
+    font-size: 1.5rem;
+    border-color: black;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.botonLimpiar:active{
+    background-color: rgba(255, 255, 0, 0.8)
+}
+.botonEnviar:active{
+    background-color: rgba(255, 255, 0, 0.8)
+}
+.extra{
+    grid-area: extra;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 2rem 0;
+}
+/*---------------RESPONSIVE MOBILE INDEX---------------*/
+@media screen and (max-width: 500px){
+    .menu li{
+        display: block;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.5rem;
+        padding: 0.5rem 3rem;
+    }
+    .mainHome {
+        grid-template-rows: 1fr 1.5fr;
+    }
+    .masPedidos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.8fr 0.4fr 0.8fr 0.4fr 0.8fr 0.4fr;
+        grid-template-areas: 
+        "titulo"
+        "imagen1"
+        "destacado1"
+        "imagen2"
+        "destacado2"
+        "imagen3"
+        "destacado3";
+    }
+    .sectionHome{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr repeat(2, 0.2fr) 1fr repeat(2, 0.2fr) 1fr;
+        grid-template-areas:
+        "ubicacion" 
+        "sucursal1" 
+        "horario1"
+        "mapa1"
+        "sucursal2"
+        "horario2"
+        "mapa2";
+        justify-items: center;
+        align-items: center;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr) repeat(2, 0.3fr);
+        grid-template-areas:
+        "nosotros"
+        "redes" 
+        "newsletter"
+        "tarjetas" 
+        "copyright"; 
+        height: 50rem;
+        justify-items: start;
+        padding-left: 3rem;
+    }
+}
+/*---------------RESPONSIVE MOBILE PRODUCTOS---------------*/
+@media screen and (max-width: 500px){
+    .mainProductos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr
+        1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr;
+        grid-template-areas: 
+        "titulo"
+        "fotoArandanos"
+        "arandanos"
+        "fotoAlmohaditas"
+        "almohaditas"
+        "fotoAlmendras"
+        "almendras"
+        "fotoAvellanas"  
+        "avellanas"
+        "fotoMixFrutos"
+        "mixFrutos"
+        "fotoAvena"
+        "avena"
+        "fotoPepas"  
+        "pepas"
+        "fotoGalletas" 
+        "galletas"
+        "fotoPastaMani"
+        "pastaMani";
+        }
+}
+/*---------------RESPONSIVE MOBILE PROMOCIONES---------------*/
+@media screen and (max-width: 500px){
+    .mainPromos{
+        grid-template-rows: 0.7fr 5fr;
+    }
+    .promociones{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.3fr 0.3fr 0.8fr 0.3fr 0.3fr 0.8fr 0.3fr 0.3fr;
+        grid-template-areas:  
+        "fotoMani"
+        "promo1"
+        "mas1"
+        "fotoLino"
+        "promo2" 
+        "mas2"
+        "fotoQuinoa"
+        "promo3" 
+        "mas3";
+    }
+}
+
+/*---------------RESPONSIVE MOBILE NOSOTROS---------------*/
+@media screen and (max-width: 500px){
+    .mainNosotros{
+        grid-template-rows: 0.2fr 1fr;
+    }
+}
+/*---------------RESPONSIVE MOBILE CONTACTO---------------*/
+@media screen and (max-width: 500px){
+    .formulario{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 0.7fr) repeat(3, 0.3fr) 0.7fr repeat(4, 0.2fr);
+        grid-template-areas:
+        "contactanos" 
+        "texto"
+        "nombre"
+        "telefono" 
+        "email"
+        "mensaje"
+        "condicion1"
+        "condicion2"
+        "botonLimpiar"
+        "botonEnviar";
+    }
+    .textoContacto{
+        font-size: 2rem;
+    }
+}
