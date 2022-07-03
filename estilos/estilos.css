@@ -112,14 +112,14 @@ html{
     border-width: 0.1rem;
     border-radius: 3%;
     border-style: solid;
-    transition: 0.4s;
-}
-.masPedidos img:hover{
+/*     transition: 0.4s;
+ */}
+/* .masPedidos img:hover{
     width: 25rem;
     height: 25rem;
     border-width: 0.5rem;
 }
-.masPedidos h3{
+ */.masPedidos h3{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -313,13 +313,13 @@ html{
     border-radius: 3%;
     border-style: solid;
     margin: 3rem;
-    transition: 0.4s;
-}
-.mainProductos img:hover{
+/*     transition: 0.4s;
+ */}
+/* .mainProductos img:hover{
     width: 25rem;
     height: 25rem;
     border-width: 0.5rem;
-}
+} */
 .fotoArandanos{
     grid-area: fotoArandanos;
 }
