@@ -53,7 +53,7 @@ html{
     width: 10rem;
     height: 7rem;
 }
-/*---------------ESTILOS MAIN---------------*/
+/*---------------ESTILOS MAIN----------------*/
 .mainHome {
     grid-area: main;
     display: grid;
