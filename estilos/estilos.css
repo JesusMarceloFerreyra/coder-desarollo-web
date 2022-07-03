@@ -112,15 +112,9 @@ html{
     border-width: 0.1rem;
     border-radius: 3%;
     border-style: solid;
-<<<<<<< HEAD
-/*     transition: 0.4s;
- */}
-/* .masPedidos img:hover{
-=======
     transition: 0.4s;
 }
 .masPedidos img:hover{
->>>>>>> rama-transiciones
     width: 25rem;
     height: 25rem;
     border-width: 0.5rem;
