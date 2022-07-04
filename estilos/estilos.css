@@ -9,44 +9,23 @@ html{
 }
 
 /*---------------ESTILOS INDEX---------------*/
-/*---------------GRILLA GENERAL DE TODO EL BODY---------------*/
-.bodyHome{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "section"
-    "footer";
-}
 /*---------------ESTILOS HEADER---------------*/
 .header{
-    grid-area: header;
-    position: sticky; /* QUE SE MANTENGA DURANTE TODO EL SCROLL */
+    position: sticky;
     top: 0;
     z-index: 10;
 }
 .menu{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
     background-color: rgb(80, 200, 215);
     border-color: black;
     border-width: 0.3rem 0;
     border-style: solid;
-}
-.menu a{
-    text-decoration: none;
-}
-.menu li{
-    display: inline-block;
     font-family: "Oswald", sans-serif;
     font-size: 2rem;
-    padding: 2rem 6rem;
+    justify-content: space-around;
+    align-items: center;
 }
-.menu li:hover{
+.menu a:hover{
     background-color: rgba(255, 255, 0, 0.8)
 }
 .logo{
@@ -54,22 +33,7 @@ html{
     height: 7rem;
 }
 /*---------------ESTILOS MAIN----------------*/
-.mainHome {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 2fr 1.5fr;
-    grid-template-areas: /* DENTRO DEL MAIN HAGO UNA NUEVA GRILLA */
-    "bienvenida"
-    "masPedidos";
-}
-.bienvenida{
-    grid-area: bienvenida;
-}
 .fondoHome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20rem 0;
     width: 100%;
     background: url(../multimedia/fondo.jpg);
@@ -78,6 +42,7 @@ html{
     font-family: "Josefin Sans", sans-serif;
     font-size: 5rem;
     color: white;
+    justify-content: center;
 }
 .tituloHome{
     font-family: "Oswald", sans-serif;
@@ -85,6 +50,7 @@ html{
     font-size: 3rem;
     text-align: center;
     padding: 2rem 0;
+    justify-content:center;
 }
 .intro{
     background-color: rgb(240, 240, 240);
@@ -92,138 +58,86 @@ html{
     font-size: 2rem;
     padding: 5rem 0;
     text-align: center;
+    justify-content: center;
 }
 .masPedidos{
-    grid-area: masPedidos;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.8fr 0.4fr;
-    grid-template-areas: /* TERCER GRILLA EN CADENA PARA ORDENAR MEJOR */
-    "titulo titulo titulo" /* DENTRO DE ESTA YA ORDENO A LOS HIJOS CON FLEX */
-    "imagen1 imagen2 imagen3"
-    "destacado1 destacado2 destacado3";
-    background-color: rgb(255, 255, 255);
     font-family: "Oswald", sans-serif;
+    margin: 4rem 0;
+}
+.tituloPedidos{   
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 4rem 0;
 }
 .masPedidos img{
     width: 20rem;
     height: 20rem;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 0.1rem;
+    border-radius: 3%;
+    border-style: solid;
+    margin: 3rem 0;
+    justify-content: center;
+    transition: 0.4s;
+}
+.masPedidos img:hover{
+    width: 27rem;
+    height: 27rem;
+    background-color: rgb(80, 200, 215);
+    border-width: 0.5rem;
+}
+.masPedidos h5{
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+.masPedidos p{
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+.buttonPedidos{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    background-color: rgb(80, 200, 215);
+}
+.producto{
     border-color: black;
     border-width: 0.1rem;
     border-radius: 3%;
     border-style: solid;
-    transition: 0.4s;
-}
-.masPedidos img:hover{
-    width: 25rem;
-    height: 25rem;
-    border-width: 0.5rem;
-}
-.masPedidos h3{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 1.7rem;  
-}
-.subtituloHome{
-    grid-area: titulo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-}
-.imagen1{
-    grid-area: imagen1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imagen2{
-    grid-area: imagen2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imagen3{
-    grid-area: imagen3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.destacado1{
-    grid-area: destacado1;
-}
-.destacado2{
-    grid-area: destacado2;
-}
-.destacado3{
-    grid-area: destacado3;
+    margin: 4rem;
 }
 /*---------------ESTILOS SECTION---------------*/
 .sectionHome{
-    grid-area: section;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 0.2fr 0.2fr 1fr;
-    grid-template-areas: /* CREO ESTA GRILLA DENTRO DEL GRID AREA SECTION */
-    "ubicacion ubicacion" /* CENTRO TODOS LOS HIJOS CON PROPIEDAS DE GRIDS */
-    "sucursal1 sucursal2" /* NO UTILIZO FLEX */
-    "horario1 horario2"
-    "mapa1 mapa2";
     background-color: rgb(240, 240, 240);
     font-family: "Oswald", sans-serif;
-    line-height: 4rem;
-    justify-items: center;
-    align-items: center;
 }
 .sectionHome h2{
-    grid-area: ubicacion;
     font-size: 3rem;
+    margin: 4rem;
 }
-.sucursal1{
-    grid-area: sucursal1;
-    font-size: 2rem;
-    }
-.sucursal2{
-    grid-area: sucursal2;
-    font-size: 2rem;
+.sucursales h5{
+    font-size: 2.5rem;
 }
-.horario1{
-    grid-area: horario1;
-    font-size: 2rem;
-}
-.horario2{
-    grid-area: horario2;
+.sucursales p{
     font-size: 2rem;
 }
 .mapa1{
-    grid-area: mapa1;
     width: 30rem;
     height: 30rem;
-    padding: 3rem 0;
+    margin: 3rem;
 }
 .mapa2{
-    grid-area: mapa2;
     width: 30rem;
     height: 30rem;
-    padding: 3rem 0;
+    margin: 3rem;
 }
 /*---------------ESTILOS FOOTER---------------*/
 .footer{
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.3fr;
-    grid-template-areas: /* MISMO CASO QUE SECTION Y MAIN */
-    "nosotros redes newsletter" /* GRILLA DENTRO DE GRILLA */
-    "copyright tarjetas ."; /* NO USO FLEX */
     background-color: rgb(80, 200, 215);
     height: 25rem;
     line-height: 4rem;
-    justify-items: center;
-
 }
 .footer a{
     text-decoration: none;
@@ -237,15 +151,12 @@ html{
     font-size: 1.3rem;  
 }
 .nosotros{
-    grid-area: nosotros;
     margin-top: 2rem;
 }
 .redes{
-    grid-area: redes;
     margin-top: 2rem;
 }
 .newsletter{
-    grid-area: newsletter;
     margin-top: 2rem;
 }
 .registro{
@@ -253,15 +164,10 @@ html{
 
 }
 .copy{
-    grid-area: copyright;
-    justify-self: start;
     font-size: 1.3rem;
     margin-left: 2rem;
 }
 .tarjetas{
-    grid-area: tarjetas;
-    display: flex;
-    justify-content: center;
     width: 35rem;
     height: 4rem;
 }
@@ -375,92 +281,52 @@ html{
     grid-area: pastaMani;
 }
 /*---------------ESTILOS PROMOCIONES---------------*/
-.mainPromos{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
-    grid-template-areas: 
-    "titulo"
-    "promos";
+.promociones{
+    font-family: "Oswald", sans-serif;
+    margin: 4rem 0;
 }
-.tituloPromos{
-    grid-area: titulo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tituloPromos{   
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 4rem; 
-}
-.promociones{
-    grid-area: promos;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.8fr 0.4fr;
-    grid-template-areas:  
-    "fotoMani fotoLino fotoQuinoa"
-    "promo1 promo2 promo3"
-    "mas1 mas2 mas3";
+    font-size: 4rem;
+    margin: 4rem 0;
 }
 .promociones img{
     width: 20rem;
     height: 20rem;
-    border-color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.3);
     border-width: 0.1rem;
     border-radius: 3%;
     border-style: solid;
-    margin: 2rem;
+    margin: 3rem 0;
+    justify-content: center;
+    transition: 0.4s;
+}
+.promociones img:hover{
+    width: 27rem;
+    height: 27rem;
+    background-color: rgb(80, 200, 215);
+    border-width: 0.5rem;
+}
+.promociones h5{
+    font-weight: 400;
+    font-size: 2.2rem;
 }
 .promociones p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+.buttonPromos{
+    font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 1.7rem
+    font-size: 1.6rem;
+    background-color: rgb(80, 200, 215);
 }
-.promociones a{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-decoration: none;
-    font-size: 1.3rem
-
-}
-.fotoMani{
-    grid-area: fotoMani;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fotoLino{
-    grid-area: fotoLino;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fotoQuinoa{
-    grid-area: fotoQuinoa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.promo1{
-    grid-area: promo1;
-}
-.promo2{
-    grid-area: promo2;
-}
-.promo3{
-    grid-area: promo3;
-}
-.mas1{
-    grid-area: mas1;
-}
-.mas2{
-    grid-area: mas2;
-}
-.mas3{
-    grid-area: mas3;
+.producto{
+    border-color: black;
+    border-width: 0.1rem;
+    border-radius: 3%;
+    border-style: solid;
 }
 /*---------------ESTILOS NOSOTROS---------------*/
 .mainNosotros{

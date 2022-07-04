@@ -14,62 +14,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
-    <!--MUEVO EL LINK DE CSS AL CIERRE DEL HEAD COMO ME RECOMENDASTE-->
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    
+    <!-- LINK CSS DE BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- LINK JS DE BS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <!-- ANIMACIONES CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!--MI LINK DE CSS-->
+    <link rel="stylesheet" href="../estilos/estilos.css">    
 </head>
-<body class="bodyPromociones">
-    <header class="header">
-        <nav class="menu">
-            <a href="../index.html"><img class="logo" src="../multimedia/logo.jpg" alt="Logo"></a>   
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>    
+<body>
+    <header class="container-fluid header">
+        <div class="row">    
+            <nav class="nav col menu">
+                <a class="nav-link" href="../index.html"><img class="logo col" src="../multimedia/logo.jpg" alt="Logo"></a>   
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../paginas/productos.html">Productos</a>
+                <a class="nav-link" href="../paginas/promociones.html">Promociones</a>
+                <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+            </div>
+        </nav>
     </header>
-    <main class="mainPromos">
-        <h2 class="tituloPromos">¡ Promociones Imperdibles !</h2>
-        <article class="promociones">
-            <div class="fotoMani">
-                <img src="../multimedia/mani.jpg" alt="arandanos">
+    <main>
+        <article class="container-fluid">
+            <h2 class="row justify-content-center tituloPromos animate__animated animate__shakeX">Productos más Pedidos</h2>
+            <div class="row promociones justify-content-evenly">
+                <div class="card col-3 producto">
+                    <img src="../multimedia/mani.jpg" class="card-img-top" alt="mani">        
+                    <div class="card-body">
+                    <h5 class="card-title">Mani</h5>
+                    <p class="card-text">Valor Energético: 297kcal por cada 100gr</p>
+                    <a href="#" class="btn btn-primary buttonPromos">Ver Mas</a>
+                    </div>
+                </div>
+                <div class="card col-3 producto">
+                    <img src="../multimedia/lino-semilla.jpg" class="card-img-top" alt="lino">        
+                    <div class="card-body">
+                    <h5 class="card-title">Lino</h5>
+                    <p class="card-text">Valor Energético: 620kcal por cada 100gr</p>
+                    <a href="#" class="btn btn-primary buttonPromos">Ver Mas</a>
+                    </div>
+                </div>
+                <div class="card col-3 producto">
+                    <img src="../multimedia/quinoa.jpg" class="card-img-top" alt="quinoa">        
+                    <div class="card-body">
+                    <h5 class="card-title">Quinoa</h5>
+                    <p class="card-text">Valor Energético: 370kcal por cada 100gr</p>
+                    <a href="#" class="btn btn-primary buttonPromos">Ver Mas</a>
+                </div>
             </div>
-            <div class="fotoLino">    
-                <img src="../multimedia/lino-semilla.jpg" alt="almohaditas">
-            </div>
-            <div class="fotoQuinoa">
-                <img src="../multimedia/quinoa.jpg" alt="almendras">
-            </div>    
-                <p class="promo1">Maní pelado sin sal por 5kg</p>
-                <p class="promo2">Semilla de lino por 3kg</p>
-                <p class="promo3">Quinoa blanca por 3kg</p>
-                <a class="mas1" href="">Leer más..</a>
-                <a class="mas2" href="">Leer más..</a>
-                <a class="mas3" href="">Leer más..</a>
         </article>
     </main>
-    <footer class="footer">
-        <ul class="nosotros">
-            <li><h3><strong>SOBRE ¡VIVE BIEN!</strong></h3></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-        <ul class="redes">
-            <li><h3><strong>SEGUINOS EN LAS REDES SOCIALES</strong></h3></li>
-            <li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
-        </ul>
-        <ul class="newsletter">
-            <li><h3><strong>SUMATE A LA COMUNIDAD</strong></h3></li>
-            <li>REGISTRATE A NUESTRO SERVICIO DE NEWSLETTER Y ACCEDE A BENEFICIOS EXCLUSIVOS.</li>
-            <li><label for="email"></label>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="submit" value="Enviar"></li>
-        </ul>         
-        <p class="copy">© Desarrollado por Jesus Ferreyra</p>
-        <img class="tarjetas" src="../multimedia/tarjetas.png" alt="tarjetas">
+    <footer class="footer container-fluid">
+        <div class="row justify-content-around">
+            <ul class="col-3 nosotros">
+                <li><h3><strong>SOBRE ¡VIVE BIEN!</strong></h3></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+            <ul class="col-3 redes">
+                <li><h3><strong>SEGUINOS EN LAS REDES SOCIALES</strong></h3></li>
+                <li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
+            </ul>
+            <ul class="col-3 newsletter">
+                <li><h3><strong>SUMATE A LA COMUNIDAD</strong></h3></li>
+                <li class="registro"><p>REGISTRATE A NUESTRO SERVICIO DE NEWSLETTER</p> 
+                    <p>Y ACCEDE A BENEFICIOS EXCLUSIVOS.</p></li>
+                <li><label for="email"></label>
+                    <input type="email" name="email" placeholder=" Email" required>
+                    <input type="submit" value="Enviar"></li>
+            </ul>         
+        </div>
+        <div class="row justify-content-center">
+            <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="tarjetas">
+        </div>
+        <div class="row justify-content-star">
+            <p class="copy col-2">© Desarrollado por Jesus Ferreyra</p>
+        </div>
     </footer>
 </body>
 </html>
