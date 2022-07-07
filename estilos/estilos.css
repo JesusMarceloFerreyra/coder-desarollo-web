@@ -48,7 +48,6 @@ html{
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 3rem;
-    text-align: center;
     padding: 2rem 0;
     justify-content:center;
 }
@@ -185,100 +184,34 @@ html{
     border-style: solid;
 }
 /*---------------ESTILOS PRODUCTOS---------------*/
-.mainProductos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.6fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "fotoArandanos fotoAlmohaditas fotoAlmendras"
-    "arandanos almohaditas almendras"
-    "fotoAvellanas fotoMixFrutos fotoAvena"
-    "avellanas mixFrutos avena"
-    "fotoPepas fotoGalletas fotoPastaMani"
-    "pepas galletas pastaMani";
-    justify-items: center;
-    align-items: center;
-}
 .tituloProductos{
-    grid-area: titulo;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 4rem; 
+    font-size: 4rem;
+    margin: 3rem 0;
+    justify-content: center;
 }
-.mainProductos h3{
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 1.7rem;
+.carrusel{
+    justify-content: center;
+    margin: 5rem 0;
+}
+.carousel{
+    height: 480px;
+    width: 480px;
+    border-color: black;
+    border-width: 0.2rem;
+    border-style: solid;
+    justify-content: center;
+}
+.carousel-indicators{
+    margin: 0;
 }
 .mainProductos img{
-    width: 20rem;
-    height: 20rem;
-    border-color: black;
-    border-width: 0.1rem;
-    border-radius: 3%;
-    border-style: solid;
-    margin: 3rem;
-    transition: 0.4s;
+    height: 470px;
+    width: 470px;
 }
-.mainProductos img:hover{
-    width: 25rem;
-    height: 25rem;
-    border-width: 0.5rem;
-}
-.fotoArandanos{
-    grid-area: fotoArandanos;
-}
-.fotoAlmohaditas{
-    grid-area: fotoAlmohaditas;
-}
-.fotoAlmendras{
-    grid-area: fotoAlmendras;
-}
-.fotoAvellanas{
-    grid-area: fotoAvellanas;
-}
-.fotoMixFrutos{
-    grid-area: fotoMixFrutos;
-}
-.fotoAvena{
-    grid-area: fotoAvena;
-}
-.fotoPepas{
-    grid-area: fotoPepas;
-}
-.fotoGalletas{
-    grid-area: fotoGalletas;
-}
-.fotoPastaMani{
-    grid-area: fotoPastaMani;
-}
-.arandanos{
-    grid-area: arandanos;
-}
-.almohaditas{
-    grid-area: almohaditas;
-}
-.almendras{
-    grid-area: almendras;
-}
-.avellanas{
-    grid-area: avellanas;
-}
-.mixFrutos{
-    grid-area: mixFrutos;
-}
-.avena{
-    grid-area: avena;
-}
-.pepas{
-    grid-area: pepas;
-}
-.galletas{
-    grid-area: galletas;
-}
-.pastaMani{
-    grid-area: pastaMani;
+.mainProductos h5{
+    font-size: 2rem;
 }
 /*---------------ESTILOS PROMOCIONES---------------*/
 .promociones{
@@ -329,160 +262,73 @@ html{
     border-style: solid;
 }
 /*---------------ESTILOS NOSOTROS---------------*/
-.mainNosotros{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
-    grid-template-areas: 
-    "titulo"
-    "parrafo";
-}
 .tituloNosotros{
-    grid-area: titulo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin: 3rem;
+    padding: 3rem;
+    justify-content: center;
 }
 .parrafoNosotros{
-    grid-area: parrafo;
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 3rem;
-    margin: 5rem;
+    margin: 3rem;
+    padding: 3rem;
+    justify-content: center;
+}
+.main p b{
+    display: inline;
 }
 /*---------------ESTILOS CONTACTO---------------*/
-.mainContacto{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "formulario"
-    "extra";
+.articleContacto{
+    margin: 0;
+}
+.tituloContacto{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    justify-content: center;
 }
 .formulario{
-    grid-area: formulario;
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: 0.5fr 0.3fr 0.3fr 0.7fr 0.2fr 0.2fr;
-    grid-template-areas: 
-    "texto contactanos contactanos"
-    "texto nombre nombre"
-    "texto telefono email"
-    "texto mensaje mensaje"
-    "texto condicion1 condicion2"
-    "texto botonLimpiar botonEnviar";
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.7rem;
 }
-.contactanos{
-    grid-area: contactanos;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 3rem;
-    margin-top: 2rem;
-}
-.textoContacto{
-    grid-area: texto;
-    display: flex;
-    align-items: center;
-    padding: 0 4rem;
-    font-size: 2.3rem;
-}
-.estiloInput{
-    background-color: rgb(240, 240, 240);
+.form-control{
     border: outset;
 }
-.nombre{
-    grid-area: nombre;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0 3rem;
+.textoContacto{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 2.3rem;
 }
-.email{
-    grid-area: email;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0 3rem;
-}
-.telefono{
-    grid-area: telefono;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0 3rem;
-}
-.mensaje{
-    grid-area: mensaje;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin: 3rem;
-}
-.condicion1{
-    grid-area: condicion1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.condicion2{
-    grid-area: condicion2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.notificaciones{
+    margin: 2rem 0;
 }
 .botones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.botonLimpiar{
-    grid-area: botonLimpiar;
-    font-size: 1.5rem;
-    border-color: black;
-    border-width: 0.1rem;
+    background-color: rgb(80, 200, 215);
     border-style: solid;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-.botonEnviar{
-    grid-area: botonEnviar;
-    font-size: 1.5rem;
-    border-color: black;
     border-width: 0.1rem;
-    border-style: solid;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-.botonLimpiar:active{
-    background-color: rgba(255, 255, 0, 0.8)
-}
-.botonEnviar:active{
-    background-color: rgba(255, 255, 0, 0.8)
+    border-color: black;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: black;
+    width: 9rem;
+    height: 3rem;
 }
 .extra{
-    grid-area: extra;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.7rem;
     text-decoration: none;
     padding: 2rem 0;
+    justify-content: center;
 }
 /*---------------RESPONSIVE MOBILE INDEX---------------*/
 @media screen and (max-width: 500px){
