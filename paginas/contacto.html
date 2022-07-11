@@ -27,28 +27,64 @@
 </head>
 <body class="bodyContacto">
     <header class="container-fluid header">
-        <div class="row">    
-            <nav class="nav col menu">
-                <a class="nav-link" href="../index.html"><img class="logo col" src="../multimedia/logo.jpg" alt="Logo"></a>   
-                <a class="nav-link" href="../index.html">Home</a>
-                <a class="nav-link" href="productos.html">Productos</a>
-                <a class="nav-link" href="promociones.html">Promociones</a>
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>
-            </div>
-        </nav>
+		<div class="row menuDesktop">    
+			<nav class="nav col menu">
+				<a class="nav-link" href="../index.html"><img class="logo col" src="../multimedia/logo.jpg" alt="Logo"></a>   
+				<a class="nav-link" href="../index.html">Home</a>
+				<a class="nav-link" href="../paginas/productos.html">Productos</a>
+				<a class="nav-link" href="../paginas/promociones.html">Promociones</a>
+				<a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+				<a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+			</nav>
+		</div>
+		<div class="menuResponsive">
+			<nav class="navbar navbar-light bg-light fixed-top menu2">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="../index.html"><img class="logo" src="../multimedia/logo.jpg" alt="Logo"></a>
+					<button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="../paginas/productos.html">Productos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="../paginas/promociones.html">Promociones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a>
+								</li>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>        
+		</div>    
     </header>
     <main class="mainContacto">
         <h2 class="tituloContacto row animate__animated animate__backInLeft">Nos gustaria saber más de vos..</h2>
         <article class="row justify-content-around articleContacto">
-            <div class="col-3">
+            <div class="col-12 col-md-3">
                 <p class="textoContacto">Si queres información sobre cualquiera
                 de nuestros productos o estás interesado en su distribución, 
                 rellena nuestro formulario y nos pondremos en contacto con vos
                 lo antes posible. ¡Muchas Gracias por Visitarnos! Escribinos.. 
                 <a href="https://www.whatsapp.com/" target="_blank">Whatsapp</a></p> 
             </div>
-            <div class="col-5 formulario">
+            <div class="col-12 col-md-3 formulario">
             <form class="row g-3">
                     <div class="col-12">
                         <label for="inputAddress" class="form-label"> Nombre</label>
@@ -91,20 +127,20 @@
     </main>
     <footer class="footer container-fluid">
         <div class="row justify-content-around">
-            <ul class="col-3 nosotros">
+            <ul class="col-12 col-md-4 col-lg-3 nosotros">
                 <li><h3><strong>SOBRE ¡VIVE BIEN!</strong></h3></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="../paginas/nosotros.html">NOSOTROS</a></li>
+                <li><a href="../paginas/contacto.html">CONTACTO</a></li>
             </ul>
-            <ul class="col-3 redes">
+            <ul class="col-12 col-md-4 col-lg-3 redes">
                 <li><h3><strong>SEGUINOS EN LAS REDES SOCIALES</strong></h3></li>
                 <li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
                 <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
             </ul>
-            <ul class="col-3 newsletter">
+            <ul class="col-12 col-md-4 col-lg-3 newsletter">
                 <li><h3><strong>SUMATE A LA COMUNIDAD</strong></h3></li>
-                <li class="registro"><p>REGISTRATE A NUESTRO SERVICIO DE NEWSLETTER</p> 
-                    <p>Y ACCEDE A BENEFICIOS EXCLUSIVOS.</p></li>
+                <li class="registro"><p>REGISTRATE A NUESTRO NEWSLETTER Y</p> 
+                    <p>ACCEDE A BENEFICIOS EXCLUSIVOS.</p></li>
                 <li><label for="email"></label>
                     <input type="email" name="email" placeholder=" Email" required>
                     <input type="submit" value="Enviar"></li>
@@ -114,7 +150,7 @@
             <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="tarjetas">
         </div>
         <div class="row justify-content-star">
-            <p class="copy col-2">© Desarrollado por Jesus Ferreyra</p>
+            <p class="copy col-12 col-lg-4">© Desarrollado por Jesus Ferreyra</p>
         </div>
     </footer>
     <aside>

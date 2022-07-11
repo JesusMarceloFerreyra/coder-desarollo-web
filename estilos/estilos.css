@@ -10,6 +10,29 @@ html{
 
 /*---------------ESTILOS INDEX---------------*/
 /*---------------ESTILOS HEADER---------------*/
+.menuResponsive{
+    visibility: collapse;
+}
+.menu2{
+    background-color: rgb(80, 200, 215) !important;
+    border-color: black;
+    border-width: 0.3rem 0;
+    border-style: solid;
+}
+.menu2 a{
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+}
+.menu2 h5{
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+}
+.botonMenu{
+    border-color: black !important;
+    color: black;
+    border-width: 0.3rem;
+    border-style: solid;
+}
 .header{
     position: sticky;
     top: 0;
@@ -49,7 +72,8 @@ html{
     font-weight: 400;
     font-size: 3rem;
     padding: 2rem 0;
-    justify-content:center;
+    text-align: center;
+    justify-content: center;
 }
 .intro{
     background-color: rgb(240, 240, 240);
@@ -68,6 +92,7 @@ html{
     font-weight: 400;
     font-size: 3rem;
     margin: 4rem 0;
+    text-align: center;
 }
 .masPedidos img{
     width: 20rem;
@@ -122,6 +147,9 @@ html{
 .sucursales p{
     font-size: 2rem;
 }
+.tituloMapas{
+    text-align: center;
+}
 .mapa1{
     width: 30rem;
     height: 30rem;
@@ -135,7 +163,6 @@ html{
 /*---------------ESTILOS FOOTER---------------*/
 .footer{
     background-color: rgb(80, 200, 215);
-    height: 25rem;
     line-height: 4rem;
 }
 .footer a{
@@ -164,7 +191,6 @@ html{
 }
 .copy{
     font-size: 1.3rem;
-    margin-left: 2rem;
 }
 .tarjetas{
     width: 35rem;
@@ -223,6 +249,7 @@ html{
     font-weight: 400;
     font-size: 4rem;
     margin: 4rem 0;
+    text-align: center;
 }
 .promociones img{
     width: 20rem;
@@ -268,6 +295,7 @@ html{
     font-size: 4rem;
     margin: 3rem;
     padding: 3rem;
+    text-align: center;
     justify-content: center;
 }
 .parrafoNosotros{
@@ -292,6 +320,7 @@ html{
     font-size: 4rem;
     margin: 2rem 0;
     padding: 2rem 0;
+    text-align: center;
     justify-content: center;
 }
 .formulario{
@@ -331,138 +360,71 @@ html{
     justify-content: center;
 }
 /*---------------RESPONSIVE MOBILE INDEX---------------*/
-@media screen and (max-width: 500px){
-    .menu li{
-        display: block;
-        font-family: "Oswald", sans-serif;
-        font-size: 1.5rem;
-        padding: 0.5rem 3rem;
+@media screen and (max-width: 575px){
+    .menuDesktop{
+        display: none;   
     }
-    .mainHome {
-        grid-template-rows: 1fr 1.5fr;
+    .menuResponsive{
+        visibility: visible; 
     }
-    .masPedidos{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.8fr 0.4fr 0.8fr 0.4fr 0.8fr 0.4fr;
-        grid-template-areas: 
-        "titulo"
-        "imagen1"
-        "destacado1"
-        "imagen2"
-        "destacado2"
-        "imagen3"
-        "destacado3";
-    }
-    .sectionHome{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr repeat(2, 0.2fr) 1fr repeat(2, 0.2fr) 1fr;
-        grid-template-areas:
-        "ubicacion" 
-        "sucursal1" 
-        "horario1"
-        "mapa1"
-        "sucursal2"
-        "horario2"
-        "mapa2";
-        justify-items: center;
-        align-items: center;
+    .logo{
+        width: 8rem;
+        height: 6rem;
     }
     .mapa1{
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: 20rem;
     }
     .mapa2{
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: 20rem;
     }
     .footer{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr) 0.3fr;
-        grid-template-areas:
-        "nosotros"
-        "redes" 
-        "newsletter"
-        "copyright"; 
         height: 50rem;
-        justify-items: start;
-        padding-left: 3rem;
     }
     .tarjetas{
         display: none;
     }
 }
+/*---------------RESPONSIVE TABLET INDEX---------------*/
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .logo{
+        width: 8rem;
+        height: 6rem;
+    }
+}
 /*---------------RESPONSIVE MOBILE PRODUCTOS---------------*/
-@media screen and (max-width: 500px){
-    .mainProductos{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr
-        1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr;
-        grid-template-areas: 
-        "titulo"
-        "fotoArandanos"
-        "arandanos"
-        "fotoAlmohaditas"
-        "almohaditas"
-        "fotoAlmendras"
-        "almendras"
-        "fotoAvellanas"  
-        "avellanas"
-        "fotoMixFrutos"
-        "mixFrutos"
-        "fotoAvena"
-        "avena"
-        "fotoPepas"  
-        "pepas"
-        "fotoGalletas" 
-        "galletas"
-        "fotoPastaMani"
-        "pastaMani";
-        }
+@media screen and (max-width: 575px){
+    .tituloProductos{
+        margin-top: 10rem;
+    }
+    .carousel{
+        width: 320px;
+        height: 320px;
+    }
+    .mainProductos img{
+        height: 310px;
+        width: 310px;
+    }
 }
 /*---------------RESPONSIVE MOBILE PROMOCIONES---------------*/
-@media screen and (max-width: 500px){
-    .mainPromos{
-        grid-template-rows: 0.7fr 5fr;
-    }
-    .promociones{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.8fr 0.3fr 0.3fr 0.8fr 0.3fr 0.3fr 0.8fr 0.3fr 0.3fr;
-        grid-template-areas:  
-        "fotoMani"
-        "promo1"
-        "mas1"
-        "fotoLino"
-        "promo2" 
-        "mas2"
-        "fotoQuinoa"
-        "promo3" 
-        "mas3";
+@media screen and (max-width: 575px){
+    .tituloPromos{
+        margin-top: 10rem;
     }
 }
 /*---------------RESPONSIVE MOBILE NOSOTROS---------------*/
-@media screen and (max-width: 500px){
-    .mainNosotros{
-        grid-template-rows: 0.2fr 1fr;
+@media screen and (max-width: 575px){
+    .tituloNosotros{
+        margin-top: 10rem;
     }
 }
 /*---------------RESPONSIVE MOBILE CONTACTO---------------*/
-@media screen and (max-width: 500px){
-    .formulario{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2, 0.7fr) repeat(3, 0.3fr) 0.7fr repeat(4, 0.2fr);
-        grid-template-areas:
-        "contactanos" 
-        "texto"
-        "nombre"
-        "telefono" 
-        "email"
-        "mensaje"
-        "condicion1"
-        "condicion2"
-        "botonLimpiar"
-        "botonEnviar";
+@media screen and (max-width: 575px){
+    .tituloContacto{
+        margin-top: 10rem;
     }
     .textoContacto{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
