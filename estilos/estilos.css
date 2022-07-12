@@ -167,6 +167,11 @@ html{
 }
 .footer a{
     text-decoration: none;
+    transition: 0.2s;
+}
+.footer a:hover{
+    font-size: 2rem;
+    color: white;
 }
 .footer li{
     list-style-type: none;
@@ -187,7 +192,6 @@ html{
 }
 .registro{
     line-height: 2rem;
-
 }
 .copy{
     font-size: 1.3rem;
@@ -294,21 +298,36 @@ html{
     font-weight: 400;
     font-size: 4rem;
     margin: 3rem;
-    padding: 3rem;
     text-align: center;
     justify-content: center;
 }
 .parrafoNosotros{
     font-family: "Oswald", sans-serif;
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 3rem;
-    margin: 3rem;
-    padding: 3rem;
+    margin: 5rem;
     justify-content: center;
 }
 .main p b{
     display: inline;
+}
+/* LUEGO VOY A PONERLE UNA PSEUDOCLASE A LA GALERIA (:HOVER)
+PARA OPACAR LA IMAGEN Y QUE APAREZCA ALGUN TEXTO, POR EL MOMENTO
+NO LO HICE PORQUE NO ME QUEDA COMO QUIERO*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+    grid-gap: 8rem;
+    margin: 15rem;
+}
+.galeria img{
+    width: 30rem;
+    height: 20rem;
 }
 /*---------------ESTILOS CONTACTO---------------*/
 .articleContacto{
@@ -417,6 +436,14 @@ html{
 @media screen and (max-width: 575px){
     .tituloNosotros{
         margin-top: 10rem;
+    }
+}
+/* MEDIA QUERY MOMENTANEA, 
+LUEGO VOY A REDACTAR MEJOR EL RESPONSIVE PARA ESTAS IMAGENES,
+POR EL MOMENTO LO HICE ASI */
+@media screen and (max-width: 1300px){
+    .galeria{
+        display: none;
     }
 }
 /*---------------RESPONSIVE MOBILE CONTACTO---------------*/
