@@ -1,3 +1,4 @@
+/*
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +8,10 @@
 html{
     font-size: 62.5%;
 }
-
+*/
 /*---------------ESTILOS INDEX---------------*/
 /*---------------ESTILOS HEADER---------------*/
+/*
 .menuResponsive{
     visibility: collapse;
 }
@@ -54,9 +56,9 @@ html{
 .logo{
     width: 10rem;
     height: 7rem;
-}
+}*/
 /*---------------ESTILOS MAIN----------------*/
-.fondoHome{
+/* .fondoHome{
     padding: 20rem 0;
     width: 100%;
     background: url(../multimedia/fondo.jpg);
@@ -131,9 +133,9 @@ html{
     border-radius: 3%;
     border-style: solid;
     margin: 4rem;
-}
+} */
 /*---------------ESTILOS SECTION---------------*/
-.sectionHome{
+/* .sectionHome{
     background-color: rgb(240, 240, 240);
     font-family: "Oswald", sans-serif;
 }
@@ -160,8 +162,8 @@ html{
     height: 30rem;
     margin: 3rem;
 }
-/*---------------ESTILOS FOOTER---------------*/
-.footer{
+ *//*---------------ESTILOS FOOTER---------------*/
+/* .footer{
     background-color: rgb(80, 200, 215);
     line-height: 4rem;
 }
@@ -200,20 +202,20 @@ html{
     width: 35rem;
     height: 4rem;
 }
-/*---------------ESTILOS ASIDE---------------*/
-.whatsapp{
+ *//*---------------ESTILOS ASIDE---------------*/
+/* .whatsapp{
     width: 5rem;
     height: 5rem;
     display: inline-block;
     position: fixed; /* SE MANTIENE DURANTE TODO EL SCROLL COMO EL MENU */
-    right: 3rem;
+/*     right: 3rem;
     bottom: 3rem;
     border-color: chartreuse;
     border-width: 0.1rem;
     border-radius: 20%;
     border-style: solid;
-}
-/*---------------ESTILOS PRODUCTOS---------------*/
+} */
+ /*---------------ESTILOS PRODUCTOS---------------*/
 .tituloProductos{
     font-family: "Oswald", sans-serif;
     font-weight: 400;
