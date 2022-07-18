@@ -1,0 +1,11 @@
+/*---------------ESTILOS PROMOCIONES---------------*/
+.promociones{
+    @extend .masPedidos;
+}
+.tituloPromos{   
+    @extend .tituloPedidos;
+    font-size: 4rem;
+}
+.buttonPromos{
+    @extend .buttonPedidos;    
+}

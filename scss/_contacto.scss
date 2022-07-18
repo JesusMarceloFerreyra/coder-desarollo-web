@@ -1,0 +1,46 @@
+/*---------------ESTILOS CONTACTO---------------*/
+.articleContacto{
+    margin: 0;
+}
+.tituloContacto{
+    font-family: map-get($fuentes, letra1);
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    text-align: center;
+    justify-content: center;
+}
+.formulario{
+    font-family: map-get($fuentes, letra1);
+    font-size: map-get($fuentes, tamano4);
+    font-weight: 300;
+}
+.form-control{
+    border: outset;
+}
+.textoContacto{
+    @extend .formulario;
+    font-size: map-get($fuentes, tamano5);
+}
+.notificaciones{
+    margin: 2rem 0;
+}
+.botones{
+    background-color: rgb(80, 200, 215);
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+    font-family: map-get($fuentes, letra1);
+    font-size: map-get($fuentes, tamano3);
+    font-weight: 400;
+    color: black;
+    width: 9rem;
+    height: 3rem;
+}
+.extra{
+    @extend .formulario;
+    text-decoration: none;
+    padding: 2rem 0;
+    justify-content: center;
+}

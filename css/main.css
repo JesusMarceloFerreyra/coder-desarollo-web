@@ -1,3 +1,7 @@
+/*---------------VARIABLES---------------*/
+/*---------------MAPAS---------------*/
+/*---------------MIXINS---------------*/
+/*---------------RESETEO---------------*/
 * {
   margin: 0;
   padding: 0;
@@ -6,22 +10,23 @@
 html {
   font-size: 62.5%; }
 
+/*---------------IMPORT---------------*/
 /*---------------ESTILOS INDEX---------------*/
 /*---------------ESTILOS HEADER---------------*/
 .menuResponsive {
   visibility: collapse; }
 
-.menu2 {
+.menu2, .menu {
   background-color: #50c8d7 !important;
   border-color: black;
   border-width: 0.3rem 0;
   border-style: solid; }
-  .menu2 a {
+  .menu2 a, .menu a {
     font-family: "Oswald", sans-serif;
-    font-size: 2.5rem; }
-  .menu2 h5 {
+    font-size: 2rem; }
+  .menu2 h5, .menu h5 {
     font-family: "Oswald", sans-serif;
-    font-size: 2.5rem; }
+    font-size: 2rem; }
 
 .botonMenu {
   border-color: black !important;
@@ -35,12 +40,6 @@ html {
   z-index: 10; }
 
 .menu {
-  background-color: #50c8d7;
-  border-color: black;
-  border-width: 0.3rem 0;
-  border-style: solid;
-  font-family: "Oswald", sans-serif;
-  font-size: 2rem;
   justify-content: space-around;
   align-items: center; }
   .menu a:hover {
@@ -64,8 +63,8 @@ html {
 
 .tituloHome {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   font-size: 3rem;
+  font-weight: 400;
   padding: 2rem 0;
   text-align: center;
   justify-content: center; }
@@ -78,10 +77,10 @@ html {
   text-align: center;
   justify-content: center; }
 
-.masPedidos {
+.masPedidos, .promociones {
   font-family: "Oswald", sans-serif;
   margin: 4rem 0; }
-  .masPedidos img {
+  .masPedidos img, .promociones img {
     width: 20rem;
     height: 20rem;
     border-color: rgba(0, 0, 0, 0.3);
@@ -91,29 +90,29 @@ html {
     margin: 3rem 0;
     justify-content: center;
     transition: 0.4s; }
-    .masPedidos img:hover {
+    .masPedidos img:hover, .promociones img:hover {
       width: 27rem;
       height: 27rem;
       background-color: #50c8d7;
       border-width: 0.5rem; }
-  .masPedidos h5 {
+  .masPedidos h5, .promociones h5 {
     font-weight: 400;
-    font-size: 2.2rem; }
-  .masPedidos p {
+    font-size: 2rem; }
+  .masPedidos p, .promociones p {
     font-weight: 300;
-    font-size: 1.6rem; }
+    font-size: 1.7rem; }
 
-.tituloPedidos {
+.tituloPedidos, .tituloPromos {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   font-size: 3rem;
+  font-weight: 400;
   margin: 4rem 0;
   text-align: center; }
 
-.buttonPedidos {
+.buttonPedidos, .buttonPromos {
   font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
   font-weight: 400;
-  font-size: 1.6rem;
   background-color: #50c8d7; }
 
 .producto {
@@ -154,12 +153,16 @@ html {
   line-height: 4rem; }
   .footer a {
     text-decoration: none;
+    font-weight: 400;
+    color: black;
     transition: 0.2s; }
     .footer a:hover {
       font-size: 2rem;
       color: white; }
   .footer li {
-    list-style-type: none; }
+    list-style-type: none;
+    font-weight: 400;
+    color: black; }
   .footer ul {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
@@ -197,3 +200,51 @@ html {
   border-width: 0.1rem;
   border-radius: 20%;
   border-style: solid; }
+
+/*---------------ESTILOS PROMOCIONES---------------*/
+.tituloPromos {
+  font-size: 4rem; }
+
+/*---------------ESTILOS CONTACTO---------------*/
+.articleContacto {
+  margin: 0; }
+
+.tituloContacto {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  justify-content: center; }
+
+.formulario, .textoContacto, .extra {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300; }
+
+.form-control {
+  border: outset; }
+
+.textoContacto {
+  font-size: 2.5rem; }
+
+.notificaciones {
+  margin: 2rem 0; }
+
+.botones {
+  background-color: #50c8d7;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: black;
+  width: 9rem;
+  height: 3rem; }
+
+.extra {
+  text-decoration: none;
+  padding: 2rem 0;
+  justify-content: center; }

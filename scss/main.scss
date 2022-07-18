@@ -1,3 +1,32 @@
+/*---------------VARIABLES---------------*/
 $fuentePrincipal: "Oswald", sans-serif;
+$fuenteSecundaria: "Josefin Sans", sans-serif;
 
+/*---------------MAPAS---------------*/
+$fuentes:(
+    letra1: $fuentePrincipal,
+    letra2: $fuenteSecundaria,
+    tamano1: 2rem,
+    tamano2: 3rem,
+    tamano3: 1.3rem,
+    tamano4: 1.7rem,
+    tamano5: 2.5rem
+);
+/*---------------MIXINS---------------*/
+@mixin imagenes ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+/*---------------RESETEO---------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/*---------------IMPORT---------------*/
 @import "home";
+@import "promociones";
+@import "contacto";

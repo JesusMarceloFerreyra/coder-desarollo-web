@@ -1,13 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-}
-
 /*---------------ESTILOS INDEX---------------*/
 /*---------------ESTILOS HEADER---------------*/
 .menuResponsive{
@@ -19,12 +9,12 @@ html{
     border-width: 0.3rem 0;
     border-style: solid;
     a{
-        font-family: $fuentePrincipal;
-        font-size: 2.5rem;
+        font-family: map-get($fuentes, letra1);
+        font-size: map-get($fuentes, tamano1);
     }
     h5{
-        font-family: $fuentePrincipal;
-        font-size: 2.5rem;
+        font-family: map-get($fuentes, letra1);
+        font-size: map-get($fuentes, tamano1);
     }
 }
 .botonMenu{
@@ -39,12 +29,7 @@ html{
     z-index: 10;
 }
 .menu{
-    background-color: rgb(80, 200, 215);
-    border-color: black;
-    border-width: 0.3rem 0;
-    border-style: solid;
-    font-family: $fuentePrincipal;
-    font-size: 2rem;
+    @extend .menu2;
     justify-content: space-around;
     align-items: center;
     a{
@@ -64,33 +49,32 @@ html{
     background: url(../multimedia/fondo.jpg);
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: soft-light;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: map-get($fuentes, letra2);
     font-size: 5rem;
     color: white;
     justify-content: center;
 }
 .tituloHome{
-    font-family: $fuentePrincipal;
+    font-family: map-get($fuentes, letra1);
+    font-size: map-get($fuentes, tamano2);
     font-weight: 400;
-    font-size: 3rem;
     padding: 2rem 0;
     text-align: center;
     justify-content: center;
 }
 .intro{
     background-color: rgb(240, 240, 240);
-    font-family: $fuentePrincipal;
-    font-size: 2rem;
+    font-family: map-get($fuentes, letra1);
+    font-size: map-get($fuentes, tamano1);
     padding: 5rem 0;
     text-align: center;
     justify-content: center;
 }
 .masPedidos{
-    font-family: $fuentePrincipal;
+    font-family: map-get($fuentes, letra1);
     margin: 4rem 0;
     img{
-        width: 20rem;
-        height: 20rem;
+        @include imagenes(20rem, 20rem);
         border-color: rgba(0, 0, 0, 0.3);
         border-width: 0.1rem;
         border-radius: 3%;
@@ -104,28 +88,27 @@ html{
             background-color: rgb(80, 200, 215);
             border-width: 0.5rem;
         }
-        
     }
     h5{
         font-weight: 400;
-        font-size: 2.2rem;
+        font-size: map-get($fuentes, tamano1);
     }
     p{
         font-weight: 300;
-        font-size: 1.6rem;
+        font-size: map-get($fuentes, tamano4);
     }
 }
 .tituloPedidos{   
-    font-family: $fuentePrincipal;
+    font-family: map-get($fuentes, letra1);
+    font-size: map-get($fuentes, tamano2);
     font-weight: 400;
-    font-size: 3rem;
     margin: 4rem 0;
     text-align: center;
 }
 .buttonPedidos{
-    font-family: $fuentePrincipal;
+    font-family: map-get($fuentes, letra1);
+    font-size: map-get($fuentes, tamano4);
     font-weight: 400;
-    font-size: 1.6rem;
     background-color: rgb(80, 200, 215);
 }
 .producto{
@@ -138,16 +121,16 @@ html{
 /*---------------ESTILOS SECTION---------------*/
 .sectionHome{
     background-color: rgb(240, 240, 240);
-    font-family: $fuentePrincipal;
+    font-family: map-get($fuentes, letra1);
     h2{
-        font-size: 3rem;
+        font-size: map-get($fuentes, tamano2);
         margin: 4rem;
     }
     h5{
-        font-size: 2.5rem;
+        font-size: map-get($fuentes, tamano5);
     }
     p{
-        font-size: 2rem;
+        font-size: map-get($fuentes, tamano1);
     }
 }
 .tituloMapas{
@@ -169,19 +152,24 @@ html{
     line-height: 4rem;
     a{
         text-decoration: none;
+        font-weight: 400;
+        color: black;
         transition: 0.2s;
         &:hover{
-            font-size: 2rem;
+            font-size: map-get($fuentes, tamano1);
             color: white;
         }
     }
     li{
         list-style-type: none;
+        font-weight: 400;
+        color: black;
+
     }
     ul{
-        font-family: $fuentePrincipal;
+        font-family: map-get($fuentes, letra1);
         font-weight: 300;
-        font-size: 1.3rem;  
+        font-size: map-get($fuentes, tamano3);
     }
 }
 .nosotros{
@@ -197,7 +185,7 @@ html{
     line-height: 2rem;
 }
 .copy{
-    font-size: 1.3rem;
+    font-size: map-get($fuentes, tamano3);
 }
 .tarjetas{
     width: 35rem;

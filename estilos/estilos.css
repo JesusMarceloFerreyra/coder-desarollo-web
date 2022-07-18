@@ -246,7 +246,7 @@ html{
     font-size: 2rem;
 }
 /*---------------ESTILOS PROMOCIONES---------------*/
-.promociones{
+/* .promociones{
     font-family: "Oswald", sans-serif;
     margin: 4rem 0;
 }
@@ -293,7 +293,7 @@ html{
     border-width: 0.1rem;
     border-radius: 3%;
     border-style: solid;
-}
+} */
 /*---------------ESTILOS NOSOTROS---------------*/
 .tituloNosotros{
     font-family: "Oswald", sans-serif;
@@ -332,7 +332,7 @@ NO LO HICE PORQUE NO ME QUEDA COMO QUIERO*/
     height: 20rem;
 }
 /*---------------ESTILOS CONTACTO---------------*/
-.articleContacto{
+/* .articleContacto{
     margin: 0;
 }
 .tituloContacto{
@@ -380,7 +380,7 @@ NO LO HICE PORQUE NO ME QUEDA COMO QUIERO*/
     padding: 2rem 0;
     justify-content: center;
 }
-/*---------------RESPONSIVE MOBILE INDEX---------------*/
+ *//*---------------RESPONSIVE MOBILE INDEX---------------*/
 @media screen and (max-width: 575px){
     .menuDesktop{
         display: none;   
