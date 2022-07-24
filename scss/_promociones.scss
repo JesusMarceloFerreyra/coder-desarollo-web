@@ -9,3 +9,21 @@
 .buttonPromos{
     @extend .buttonPedidos;    
 }
+#multiCollapseExample1{
+    font-family: map-get($fuentes, letra1);
+    font-size: map-get($fuentes, tamano4);
+    font-weight: 300;
+    line-height: 2rem;
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style-type: none;
+    }
+}
+#multiCollapseExample2{
+    @extend #multiCollapseExample1; 
+}
+#multiCollapseExample3{
+    @extend #multiCollapseExample1; 
+}

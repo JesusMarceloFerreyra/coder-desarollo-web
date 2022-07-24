@@ -23,14 +23,13 @@
     <!-- ANIMACIONES CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
-    <!--MI LINK DE SCSS-->
+    <!--MI LINK DE CSS-->
     <link rel="stylesheet" href="../css/main.css">
 
-    <!--MI LINK DE CSS-->
-    <link rel="stylesheet" href="../estilos/estilos.css">    
 </head>
 <body>
 	<header class="container-fluid header">
+        <!-- MENU PARA DESKTOP Y TABLET -->
 		<div class="row menuDesktop">    
 			<nav class="nav col menu">
 				<a class="nav-link" href="../index.html"><img class="logo col" src="../multimedia/logo.jpg" alt="Logo"></a>   
@@ -41,6 +40,7 @@
 				<a class="nav-link" href="../paginas/contacto.html">Contacto</a>
 			</nav>
 		</div>
+        <!-- MENU PARA MOBILE -->
 		<div class="menuResponsive">
 			<nav class="navbar navbar-light bg-light fixed-top menu2">
 				<div class="container-fluid">
@@ -79,31 +79,61 @@
 		</div>    
     </header>    
     <main>
+        <!-- PROMOCIONES -->
         <article class="container-fluid">
+            <!-- TITULO -->
             <h2 class="row justify-content-center tituloPromos animate__animated animate__flipInY">Nuestras Promociones</h2>
             <div class="row promociones justify-content-evenly">
+                <!-- ARTICULO 1 -->
                 <div class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="../multimedia/mani.jpg" class="card-img-top" alt="mani">        
+                    <img src="../multimedia/mani.jpg" class="card-img-top" alt="Mani">        
                     <div class="card-body">
-                    <h5 class="card-title">Mani</h5>
-                    <p class="card-text">Valor Energético: 297kcal por cada 100gr</p>
-                    <a href="#" class="btn btn-primary buttonPromos">Ver Mas</a>
+                        <h5 class="card-title">Mani</h5>
+                        <p class="card-text">Valor Energético: 297kcal por cada 100gr</p>
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <ul class="card card-body">
+                                <li>Azúcares 0</li>
+                                <li>Fibra alimentaria 9g</li> 
+                                <li>Grasas 48g</li> 
+                                <li>Proteínas 25g</li> 
+                            </ul>    
+                        </div>
+                        <button class="btn btn-primary buttonPromos" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Ver Mas</button>                        
                     </div>
                 </div>
+                <!-- ARTICULO 2 -->
                 <div class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="../multimedia/lino-semilla.jpg" class="card-img-top" alt="lino">        
+                    <img src="../multimedia/lino-semilla.jpg" class="card-img-top" alt="Lino">        
                     <div class="card-body">
-                    <h5 class="card-title">Lino</h5>
-                    <p class="card-text">Valor Energético: 620kcal por cada 100gr</p>
-                    <a href="#" class="btn btn-primary buttonPromos">Ver Mas</a>
+                        <h5 class="card-title">Lino</h5>
+                        <p class="card-text">Valor Energético: 534kcal por cada 100gr</p>
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <ul class="card card-body">
+                                <li>Azúcares 1,55gr</li>
+                                <li>Fibra alimentaria 27,03g</li> 
+                                <li>Grasas 42,16g</li> 
+                                <li>Proteínas 18,29g</li> 
+                            </ul>    
+                        </div>
+                        <button class="btn btn-primary buttonPromos" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Ver Mas</button>                        
                     </div>
                 </div>
+                <!-- ARTICULO 3 -->
                 <div class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="../multimedia/quinoa.jpg" class="card-img-top" alt="quinoa">        
+                    <img src="../multimedia/quinoa.jpg" class="card-img-top" alt="Quinoa">        
                     <div class="card-body">
-                    <h5 class="card-title">Quinoa</h5>
-                    <p class="card-text">Valor Energético: 370kcal por cada 100gr</p>
-                    <a href="#" class="btn btn-primary buttonPromos">Ver Mas</a>
+                        <h5 class="card-title">Quinoa</h5>
+                        <p class="card-text">Valor Energético: 370kcal por cada 100gr</p>
+                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                            <ul class="card card-body">
+                                <li>Azúcares 0</li>
+                                <li>Fibra alimentaria 5,9g</li> 
+                                <li>Grasas 5,8g</li> 
+                                <li>Proteínas 13,1g</li> 
+                            </ul>    
+                        </div>
+                        <button class="btn btn-primary buttonPromos" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Ver Mas</button>                        
+                    </div>
                 </div>
             </div>
         </article>
@@ -130,7 +160,7 @@
             </ul>         
         </div>
         <div class="row justify-content-center">
-            <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="tarjetas">
+            <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="Tarjetas">
         </div>
         <div class="row justify-content-star">
             <p class="copy col-12 col-lg-4">© Desarrollado por Jesus Ferreyra</p>

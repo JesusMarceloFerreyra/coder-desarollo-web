@@ -23,14 +23,13 @@
     <!-- ANIMACIONES CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
-	<!--MI LINK DE SCSS-->
+	<!--MI LINK DE CSS-->
     <link rel="stylesheet" href="../css/main.css">
 
-    <!--MI LINK DE CSS-->
-    <link rel="stylesheet" href="../estilos/estilos.css">    
 </head>
 <body>
 	<header class="container-fluid header">
+        <!-- MENU PARA DESKTOP Y TABLET -->
 		<div class="row menuDesktop">    
 			<nav class="nav col menu">
 				<a class="nav-link" href="../index.html"><img class="logo col" src="../multimedia/logo.jpg" alt="Logo"></a>   
@@ -41,6 +40,7 @@
 				<a class="nav-link" href="../paginas/contacto.html">Contacto</a>
 			</nav>
 		</div>
+        <!-- MENU PARA MOBILE -->
 		<div class="menuResponsive">
 			<nav class="navbar navbar-light bg-light fixed-top menu2">
 				<div class="container-fluid">
@@ -79,6 +79,7 @@
 		</div>    
     </header>
     <main>
+        <!-- HISTORIA Y OBJETIVO DE NOSOTROS -->
         <h2 class="tituloNosotros row animate__animated animate__backInLeft">Somos una Empresa Familiar</h2>
         <p class="parrafoNosotros row">En ¡Vive Bien! buscamos brindar a cada uno de nuestros clientes la mejor atención posible, 
         escuchando atentamente sus necesidades y asesorandolos de la mejor manera 
@@ -92,14 +93,45 @@
         la importancia en la atención personalizada a nuestros clientes; tomándonos el tiempo 
         necesario para aconsejarlo, centrándonos nuestros servicios en su satisfacción.
         </p>
-        <div class="galeria">
-            <img class="img1" src="../multimedia/img-nosotros1.jpg" alt="">
-            <img class="img2" src="../multimedia/img-nosotros2.jpg" alt="">
-            <img class="img3" src="../multimedia/img-nosotros3.jpg" alt="">
-            <img class="img4" src="../multimedia/img-nosotros4.jpg" alt="">
-            <img class="img5" src="../multimedia/img-nosotros5.jpg" alt="">
-            <img class="img6" src="../multimedia/img-nosotros6.jpg" alt="">
-        </div>
+        <!-- GALERIA DE FOTOS -->
+        <article class="galeria">
+            <div class="imagenGaleria1">
+                <img src="../multimedia/img-nosotros1.jpg" alt="Dedicacion">
+                <div class="capa1">
+                    <h5>Dedicación</h5>
+                </div>
+            </div>
+            <div class="imagenGaleria2">
+                <img src="../multimedia/img-nosotros2.jpg" alt="Compromiso">
+                <div class="capa2">
+                    <h5>Compromiso</h5>
+                </div>
+            </div>
+            <div class="imagenGaleria3">
+                <img src="../multimedia/img-nosotros3.jpg" alt="Detalle">
+                <div class="capa3">
+                    <h5>Detalle</h5>
+                </div>
+            </div>
+            <div class="imagenGaleria4">
+                <img src="../multimedia/img-nosotros4.jpg" alt="Familia">
+                <div class="capa4">
+                    <h5>Familia</h5>
+                </div>
+            </div>
+            <div class="imagenGaleria5">
+                <img src="../multimedia/img-nosotros5.jpg" alt="Salud">
+                <div class="capa5">
+                    <h5>Salud</h5>
+                </div>
+            </div>
+            <div class="imagenGaleria6">
+                <img src="../multimedia/img-nosotros6.jpg" alt="Bienestar">
+                <div class="capa6">
+                    <h5>Bienestar</h5>
+                </div>
+            </div>
+        </article>
     </main>
     <footer class="footer container-fluid">
         <div class="row justify-content-around">
@@ -123,7 +155,7 @@
             </ul>         
         </div>
         <div class="row justify-content-center">
-            <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="tarjetas">
+            <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="Tarjetas">
         </div>
         <div class="row justify-content-star">
             <p class="copy col-12 col-lg-4">© Desarrollado por Jesus Ferreyra</p>

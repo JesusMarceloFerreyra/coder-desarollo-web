@@ -24,14 +24,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!--MI LINK DE SCSS-->
+    <!--MI LINK DE CSS-->
     <link rel="stylesheet" href="css/main.css">
 
-    <!--MI LINK DE CSS-->
-    <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
     <header class="container-fluid header">
+        <!-- MENU PARA DESKTOP Y TABLET -->
         <div class="row menuDesktop">    
             <nav class="nav col menu">
                 <a class="nav-link" href="index.html"><img class="logo col" src="multimedia/logo.jpg" alt="Logo"></a>   
@@ -42,6 +41,7 @@
                 <a class="nav-link" href="paginas/contacto.html">Contacto</a>
             </nav>
         </div>
+        <!-- MENU PARA MOBILE -->
         <div class="menuResponsive">
             <nav class="navbar navbar-light bg-light fixed-top menu2">
                 <div class="container-fluid">
@@ -80,6 +80,7 @@
         </div>    
     </header>
     <main>
+        <!-- ARTICULO PRINCIPAL Y BIENVENIDA -->
         <article class="container-fluid">
             <h1 class="fondoHome row">¡Vive Bien!</h1>
             <h2 class="tituloHome row">Veni a Probar Nuestros Productos ¡Te esperamos!</h2>
@@ -87,38 +88,69 @@
             escuchando sus necesidades y asesorandolos 
             de la mejor manera a encontrar el producto que necesita.</p>
         </article>
+        <!-- PRODUCTOS MAS PEDIDOS -->
         <article class="container-fluid">
             <h2 class="row justify-content-center tituloPedidos">Productos más Pedidos</h2>
             <div class="row masPedidos justify-content-evenly">
+                <!-- PRODUCTO 1 -->
                 <div data-aos="fade-right" data-aos-duration="1000" class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="multimedia/almendras.jpg" class="card-img-top" alt="almendras">        
+                    <img src="multimedia/almendras.jpg" class="card-img-top" alt="Almendras">        
                     <div class="card-body">
-                    <h5 class="card-title">Almendras</h5>
-                    <p class="card-text">Valor Energético: 579kcal por cada 100gr</p>
-                    <a href="#" class="btn btn-primary buttonPedidos">Ver Mas</a>
+                        <h5 class="card-title">Almendras</h5>
+                        <p class="card-text">Valor Energético: 579kcal por cada 100gr</p>
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <ul class="card card-body">
+                                <li>Azúcares 4,8gr</li>
+                                <li>Fibra alimentaria 11,8g</li> 
+                                <li>Grasas 50,64g</li> 
+                                <li>Proteínas 21,26g</li> 
+                            </ul>    
+                        </div>
+                        <button class="btn btn-primary buttonPromos" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Ver Mas</button>                        
                     </div>
                 </div>
+                <!-- PRODUCTO 2 -->
                 <div data-aos="fade-right" data-aos-duration="1000" class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="multimedia/avena.jpg" class="card-img-top" alt="avena">        
+                    <img src="multimedia/avena.jpg" class="card-img-top" alt="Avena">        
                     <div class="card-body">
-                    <h5 class="card-title">Avena</h5>
-                    <p class="card-text">Valor Energético: 389kcal por cada 100gr</p>
-                    <a href="#" class="btn btn-primary buttonPedidos">Ver Mas</a>
+                        <h5 class="card-title">Avena</h5>
+                        <p class="card-text">Valor Energético: 389kcal por cada 100gr</p>
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <ul class="card card-body">
+                                <li>Azúcares 0,70gr</li>
+                                <li>Fibra alimentaria 10,0g</li> 
+                                <li>Grasas 7,0g</li> 
+                                <li>Proteínas 14,0g</li> 
+                            </ul>    
+                        </div>
+                        <button class="btn btn-primary buttonPromos" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Ver Mas</button>                        
                     </div>
                 </div>
+                <!-- PRODUCTO 3 -->
                 <div data-aos="fade-right" data-aos-duration="1000" class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="multimedia/galletas.jpg" class="card-img-top" alt="galletas">        
+                    <img src="multimedia/galletas.jpg" class="card-img-top" alt="Galletas">        
                     <div class="card-body">
-                    <h5 class="card-title">Galletas</h5>
-                    <p class="card-text">Valor Energético: 319kcal por cada 100gr</p>
-                    <a href="#" class="btn btn-primary buttonPedidos">Ver Mas</a>
+                        <h5 class="card-title">Galletas</h5>
+                        <p class="card-text">Valor Energético: 486kcal por cada 100gr</p>
+                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                            <ul class="card card-body">
+                                <li>Azúcares 9,62gr</li>
+                                <li>Fibra alimentaria 2,6g</li> 
+                                <li>Grasas 5,42g</li> 
+                                <li>Proteínas 11,42g</li> 
+                            </ul>    
+                        </div>
+                        <button class="btn btn-primary buttonPromos" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Ver Mas</button>                        
+                    </div>
                 </div>
             </div>
         </article>
     </main>
+    <!-- SECCION DONDE SE MUESTRAN SUCURSALES (UBICACIONES, HORARIOS) -->
     <section class="sectionHome container-fluid">
             <h2 class="row justify-content-center tituloMapas">Visita Nuestras Tiendas</h2>
                 <div class="row justify-content-evenly">
+                    <!-- SUCURSAL CENTRO -->
                     <div class="card mb-3 col-11 col-md-6 col-lg-4">
                         <iframe class="card-img-top mapa1 col-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.
                         016887889484!2d-58.3837590845918!3d-34.60373446500628!2m3!1f0!2f0!3f0!3m2
@@ -133,6 +165,7 @@
                             <p class="card-text"><small class="text-muted">¡Te esperamos!</small></p>
                         </div>
                     </div>
+                    <!-- SUCURSAL ABASTO -->
                     <div class="card mb-3 col-11 col-md-6 col-lg-4">
                         <iframe class="card-img-bottom mapa2 col-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.58115323165!2d-58.
                         40735000635988!3d-34.613130037476964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
@@ -170,7 +203,7 @@
             </ul>         
         </div>
         <div class="row justify-content-center">
-            <img class="tarjetas col-4" src="multimedia/tarjetas.png" alt="tarjetas">
+            <img class="tarjetas col-4" src="multimedia/tarjetas.png" alt="Tarjetas">
         </div>
         <div class="row justify-content-star">
             <p class="copy col-12 col-lg-4">© Desarrollado por Jesus Ferreyra</p>

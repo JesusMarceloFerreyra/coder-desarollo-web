@@ -23,14 +23,13 @@
     <!-- ANIMACIONES CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
-    <!--MI LINK DE SCSS-->
+    <!--MI LINK DE CSS-->
     <link rel="stylesheet" href="../css/main.css">
 
-    <!--MI LINK DE CSS-->
-    <link rel="stylesheet" href="../estilos/estilos.css">    
 </head>
 <body class="bodyContacto">
     <header class="container-fluid header">
+        <!-- MENU PARA DESKTOP Y TABLET -->
 		<div class="row menuDesktop">    
 			<nav class="nav col menu">
 				<a class="nav-link" href="../index.html"><img class="logo col" src="../multimedia/logo.jpg" alt="Logo"></a>   
@@ -41,6 +40,7 @@
 				<a class="nav-link" href="../paginas/contacto.html">Contacto</a>
 			</nav>
 		</div>
+        <!-- MENU PARA MOBILE -->
 		<div class="menuResponsive">
 			<nav class="navbar navbar-light bg-light fixed-top menu2">
 				<div class="container-fluid">
@@ -79,8 +79,10 @@
 		</div>    
     </header>
     <main class="mainContacto">
+        <!-- TITULO -->
         <h2 class="tituloContacto row animate__animated animate__backInLeft">Nos gustaria saber más de vos..</h2>
         <article class="row justify-content-around articleContacto">
+            <!-- TEXTO DE CONTACTO -->
             <div class="col-12 col-md-3">
                 <p class="textoContacto">Si queres información sobre cualquiera
                 de nuestros productos o estás interesado en su distribución, 
@@ -88,25 +90,30 @@
                 lo antes posible. ¡Muchas Gracias por Visitarnos! Escribinos.. 
                 <a href="https://www.whatsapp.com/" target="_blank">Whatsapp</a></p> 
             </div>
+            <!-- FORMULARIO -->
             <div class="col-12 col-md-3 formulario">
-            <form class="row g-3">
+                <form class="row g-3">
+                    <!-- NOMBRE -->
                     <div class="col-12">
                         <label for="inputAddress" class="form-label"> Nombre</label>
                         <input type="text" class="form-control" id="inputAddress" required>
                     </div>
+                    <!-- EMAIL -->
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label"> Email</label>
                         <input type="email" class="form-control" id="inputEmail4" required>
                     </div>
+                    <!-- TELEFONO -->
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label"> Telefono</label>
                         <input type="password" class="form-control" id="inputPassword4">
                     </div>
+                    <!-- MENSAJE -->
                     <div class="form-floating">
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                         <label for="floatingTextarea2">Mensaje</label>
                     </div>
-
+                    <!-- RECIBIR PROMOCIONES -->
                     <div class="row notificaciones">
                         <div class="form-check form-switch col-6">
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
@@ -117,15 +124,16 @@
                             <label class="form-check-label" for="flexSwitchCheckChecked">Recibir Promociones por Whatsapp</label>
                         </div>
                     </div>
-
+                    <!-- BOTONES PARA ENVIAR Y LIMPIAR FORMULARIO -->
                     <div class="col-6">
                         <button type="reset" class="btn btn-primary botones">Limpiar</button>
                     </div>
                     <div class="col-6">
-                    <button type="submit" class="btn btn-primary botones">Enviar</button>
+                        <button type="submit" class="btn btn-primary botones">Enviar</button>
                     </div>
-            </form>
+                </form>
             </div>
+            <!-- ENLACE PARA VOLVER A HOME -->
             <a class="extra row" href="../index.html">Volver a Home</a></li>
         </article>
     </main>
@@ -151,7 +159,7 @@
             </ul>         
         </div>
         <div class="row justify-content-center">
-            <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="tarjetas">
+            <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="Tarjetas">
         </div>
         <div class="row justify-content-star">
             <p class="copy col-12 col-lg-4">© Desarrollado por Jesus Ferreyra</p>

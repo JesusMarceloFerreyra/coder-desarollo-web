@@ -1,0 +1,90 @@
+/*---------------RESPONSIVE HOME---------------*/
+@media screen and (max-width: 575px){
+    .menuDesktop{
+        display: none;   
+    }
+    .menuResponsive{
+        visibility: visible; 
+    }
+    .logo{
+        width: 8rem;
+        height: 6rem;
+    }
+    .mapa1{
+        width: 20rem;
+        height: 20rem;
+    }
+    .mapa2{
+        width: 20rem;
+        height: 20rem;
+    }
+    .footer{
+        height: 50rem;
+    }
+    .tarjetas{
+        display: none;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .logo{
+        width: 8rem;
+        height: 6rem;
+    }
+}
+/*---------------RESPONSIVE PRODUCTOS---------------*/
+@media screen and (max-width: 575px){
+    .tituloProductos{
+        margin-top: 10rem;
+    }
+    .carousel{
+        width: 320px;
+        height: 320px;
+    }
+    .mainProductos img{
+        height: 310px;
+        width: 310px;
+    }
+}
+/*---------------RESPONSIVE PROMOCIONES---------------*/
+@media screen and (max-width: 575px){
+    .tituloPromos{
+        margin-top: 10rem;
+    }
+}
+/*---------------RESPONSIVE NOSOTROS---------------*/
+@media screen and (max-width: 575px){
+    .tituloNosotros{
+        margin-top: 10rem;
+    }
+    .galeria{
+        display: none;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .galeria{
+        grid-gap: 2rem;
+        margin: 3rem;        
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+        grid-gap: 4rem;
+        margin: 10rem;
+    }
+}
+/*---------------RESPONSIVE CONTACTO---------------*/
+@media screen and (max-width: 575px){
+    .tituloContacto{
+        margin-top: 10rem;
+    }
+    .textoContacto{
+        font-size: 1.8rem;
+    }
+}

@@ -23,14 +23,13 @@
 	<!-- ANIMACIONES CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     	
-	<!--MI LINK DE SCSS-->
+	<!--MI LINK DE CSS-->
     <link rel="stylesheet" href="../css/main.css">
 
-    <!--MI LINK DE CSS-->
-    <link rel="stylesheet" href="../estilos/estilos.css">    
 </head>
 <body>
 	<header class="container-fluid header">
+		<!-- MENU PARA DESKTOP Y TABLET -->
 		<div class="row menuDesktop">    
 			<nav class="nav col menu">
 				<a class="nav-link" href="../index.html"><img class="logo col" src="../multimedia/logo.jpg" alt="Logo"></a>   
@@ -41,6 +40,7 @@
 				<a class="nav-link" href="../paginas/contacto.html">Contacto</a>
 			</nav>
 		</div>
+		<!-- MENU PARA MOBILE -->
 		<div class="menuResponsive">
 			<nav class="navbar navbar-light bg-light fixed-top menu2">
 				<div class="container-fluid">
@@ -79,7 +79,9 @@
 		</div>    
 	</header>
 	<main class="mainProductos">
+		<!-- TITULO -->
 		<h2 class="tituloProductos row justify-content-center animate__animated animate__flipInY">¡ Productos !</h2>
+		<!-- CARRUSEL -->
 		<article class="carrusel row">
 			<div id="carouselExampleDark" class="col-4 col-sm-5 col-md-6 col-lg-7 carousel carousel-dark slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
@@ -88,40 +90,45 @@
 					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
 					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
 					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>              
 				</div>
 				<div class="carousel-inner">
+					<!-- PRODUCTO 1 -->
 					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="../multimedia/avellanas.jpg" class="d-block w-100" alt="...">
+						<img src="../multimedia/avellanas.jpg" class="d-block w-100" alt="Avellanas">
 						<div class="carousel-caption d-none d-md-block">
 							<h5>Avellanas</h5>
 						</div>
 					</div>
+					<!-- PRODUCTO 2 -->
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../multimedia/almohaditas.jpg" class="d-block w-100" alt="...">
+						<img src="../multimedia/almohaditas.jpg" class="d-block w-100" alt="Almohaditas">
 						<div class="carousel-caption d-none d-md-block">
 							<h5>Almohaditas</h5>
 						</div>
 					</div>
+					<!-- PRODUCTO 3 -->
 					<div class="carousel-item">
-						<img src="../multimedia/arandanos.jpg" class="d-block w-100" alt="...">
+						<img src="../multimedia/arandanos.jpg" class="d-block w-100" alt="Arandanos">
 						<div class="carousel-caption d-none d-md-block">
 							<h5>Arandanos</h5>
 						</div>
 					</div>
+					<!-- PRODUCTO 4 -->
 					<div class="carousel-item">
-						<img src="../multimedia/mix-frutos.jpg" class="d-block w-100" alt="...">
+						<img src="../multimedia/mix-frutos.jpg" class="d-block w-100" alt="Mix Frutos">
 						<div class="carousel-caption d-none d-md-block">
 							<h5>Mix Frutos</h5>
 						</div>
 					</div>
+					<!-- PRODUCTO 5 -->
 					<div class="carousel-item">
-						<img src="../multimedia/pasta-de-mani.jpg" class="d-block w-100" alt="...">
+						<img src="../multimedia/pasta-de-mani.jpg" class="d-block w-100" alt="Pasta de Maní">
 						<div class="carousel-caption d-none d-md-block">
 							<h5>Pasta de Maní</h5>
 						</div>
 					</div>
 				</div>
+				<!-- BOTONES CARRUSEL -->
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
@@ -154,7 +161,7 @@
 			</ul>         
 		</div>
 		<div class="row justify-content-center">
-			<img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="tarjetas">
+			<img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="Tarjetas">
 		</div>
 		<div class="row justify-content-star">
 			<p class="copy col-12 col-lg-4">© Desarrollado por Jesus Ferreyra</p>

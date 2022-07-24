@@ -1,0 +1,32 @@
+ /*---------------ESTILOS PRODUCTOS---------------*/
+.tituloProductos{
+    font-family: $fuentePrincipal;
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 3rem 0;
+    justify-content: center;
+}
+.carrusel{
+    justify-content: center;
+    margin: 5rem 0;
+}
+.carousel{
+    height: 480px;
+    width: 480px;
+    border-color: black;
+    border-width: 0.2rem;
+    border-style: solid;
+    justify-content: center;
+}
+.carousel-indicators{
+    margin: 0;
+}
+.mainProductos{
+    img{
+    height: 470px;
+    width: 470px;
+    }
+    h5{
+    font-size: 2rem;
+    }
+}

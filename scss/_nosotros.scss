@@ -1,0 +1,93 @@
+/*---------------ESTILOS NOSOTROS---------------*/
+.tituloNosotros{
+    font-family: map-get($fuentes, letra1);
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+.parrafoNosotros{
+    font-family: map-get($fuentes, letra1);
+    font-size: map-get($fuentes, tamano1);
+    font-weight: 300;
+    line-height: 3rem;
+    margin: 5rem;
+    justify-content: center;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+    grid-gap: 4rem;
+    margin: 10rem;
+}
+.imagenGaleria1{
+    grid-area: img1;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 3%;
+    }
+    &:hover > .capa1{
+        opacity: 1;
+    }
+}
+.imagenGaleria2{
+    @extend .imagenGaleria1;
+    grid-area: img2;
+}
+.imagenGaleria3{
+    @extend .imagenGaleria1;
+    grid-area: img3;
+}
+.imagenGaleria4{
+    @extend .imagenGaleria1;
+    grid-area: img4;
+}
+.imagenGaleria5{
+    @extend .imagenGaleria1;
+    grid-area: img5;
+}
+.imagenGaleria6{
+    @extend .imagenGaleria1;
+    grid-area: img6;
+}
+.capa1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+    h5{
+    font-family: map-get($fuentes, letra2);
+    font-size: map-get($fuentes, tamano5);
+    }
+}
+.capa2{
+    @extend .capa1;
+}
+.capa3{
+    @extend .capa1;
+}
+.capa4{
+    @extend .capa1;
+}
+.capa5{
+    @extend .capa1;
+}
+.capa6{
+    @extend .capa1;
+}
