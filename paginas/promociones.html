@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="../css/main.css">
 
 </head>
-<body>
+<body class="bodyPromociones">
 	<header class="container-fluid header">
         <!-- MENU PARA DESKTOP Y TABLET -->
 		<div class="row menuDesktop">    
@@ -82,11 +82,13 @@
         <!-- PROMOCIONES -->
         <article class="container-fluid">
             <!-- TITULO -->
-            <h2 class="row justify-content-center tituloPromos animate__animated animate__flipInY">Nuestras Promociones</h2>
+            <h1 class="row justify-content-center tituloPromos animate__animated animate__flipInY">Nuestras Promociones</h1>
             <div class="row promociones justify-content-evenly">
                 <!-- ARTICULO 1 -->
                 <div class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="../multimedia/mani.jpg" class="card-img-top" alt="Mani">        
+                    <div class="imagenProducto">
+                        <img src="../multimedia/mani.jpg" class="card-img-top" alt="Mani">        
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Mani</h5>
                         <p class="card-text">Valor Energético: 297kcal por cada 100gr</p>
@@ -103,7 +105,9 @@
                 </div>
                 <!-- ARTICULO 2 -->
                 <div class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="../multimedia/lino-semilla.jpg" class="card-img-top" alt="Lino">        
+                    <div class="imagenProducto">
+                        <img src="../multimedia/lino-semilla.jpg" class="card-img-top" alt="Lino">        
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Lino</h5>
                         <p class="card-text">Valor Energético: 534kcal por cada 100gr</p>
@@ -120,7 +124,9 @@
                 </div>
                 <!-- ARTICULO 3 -->
                 <div class="card col-10 col-sm-8 col-md-6 col-lg-3 producto">
-                    <img src="../multimedia/quinoa.jpg" class="card-img-top" alt="Quinoa">        
+                    <div class="imagenProducto">
+                        <img src="../multimedia/quinoa.jpg" class="card-img-top" alt="Quinoa">        
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Quinoa</h5>
                         <p class="card-text">Valor Energético: 370kcal por cada 100gr</p>
@@ -139,25 +145,33 @@
         </article>
     </main>
     <footer class="footer container-fluid">
-        <div class="row justify-content-around">
-            <ul class="col-12 col-md-4 col-lg-3 nosotros">
-                <li><h3><strong>SOBRE ¡VIVE BIEN!</strong></h3></li>
-                <li><a href="../paginas/nosotros.html">NOSOTROS</a></li>
-                <li><a href="../paginas/contacto.html">CONTACTO</a></li>
-            </ul>
-            <ul class="col-12 col-md-4 col-lg-3 redes">
-                <li><h3><strong>SEGUINOS EN LAS REDES SOCIALES</strong></h3></li>
-                <li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
-            </ul>
-            <ul class="col-12 col-md-4 col-lg-3 newsletter">
-                <li><h3><strong>SUMATE A LA COMUNIDAD</strong></h3></li>
-                <li class="registro"><p>REGISTRATE A NUESTRO NEWSLETTER Y</p> 
-                    <p>ACCEDE A BENEFICIOS EXCLUSIVOS.</p></li>
-                <li><label for="email"></label>
-                    <input type="email" name="email" placeholder=" Email" required>
-                    <input type="submit" value="Enviar"></li>
-            </ul>         
+        <div class="row justify-content-around linksFooter">
+            <div class="col-12 col-md-4 col-lg-3 nosotros">
+                <ul>
+                    <li><h3><strong>CONOCENOS UN POCO MAS</strong></h3></li>
+                    <li><a href="paginas/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="paginas/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 redes">
+                <ul>
+                    <li><h3><strong>SEGUINOS EN LAS REDES</strong></h3></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 newsletter">
+                <ul>
+                    <li><h3><strong>SUMATE A LA COMUNIDAD</strong></h3></li>
+                    <li class="registro"><p>REGISTRATE EN NUESTRO</p><p>NEWSLETTER Y RECIBÍ</p> <p>TODAS NUESTRAS NOTICIAS</p></li>
+                    <li><label for="email"></label>
+                        <div class="inputNewsletter">
+                            <input type="email" name="email" placeholder=" Email" required>
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </li>    
+                </ul> 
+            </div>        
         </div>
         <div class="row justify-content-center">
             <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="Tarjetas">

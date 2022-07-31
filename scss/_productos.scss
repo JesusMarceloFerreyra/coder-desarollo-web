@@ -1,5 +1,5 @@
  /*---------------ESTILOS PRODUCTOS---------------*/
-.tituloProductos{
+ .tituloProductos{
     font-family: $fuentePrincipal;
     font-weight: 400;
     font-size: 4rem;
@@ -8,15 +8,16 @@
 }
 .carrusel{
     justify-content: center;
-    margin: 5rem 0;
+    margin: 8rem 0;
 }
 .carousel{
     height: 480px;
     width: 480px;
+    justify-content: center;
     border-color: black;
     border-width: 0.2rem;
     border-style: solid;
-    justify-content: center;
+    box-shadow: 0 0 4rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 .carousel-indicators{
     margin: 0;
@@ -29,4 +30,42 @@
     h5{
     font-size: 2rem;
     }
+}
+.socio{
+    justify-content: center;
+    margin: 5rem 0;
+    font-family: map-get($fuentes, letra1);
+    h3{
+        font-weight: 400;
+        font-size: map-get($fuentes, tamano5);
+        color: red;
+    }
+    h5{
+        font-weight: 400;
+        font-size: map-get($fuentes, tamano5);
+    }
+    p{
+        font-weight: 300;
+        font-size: map-get($fuentes, tamano1);
+    }
+}
+.cardSocio{
+    border-color: black;
+    border-width: 0.2rem;
+    border-style: solid;
+    box-shadow: 0 0 4rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+.collapseSocio{
+    justify-content: space-around;
+    margin: 5rem 0;
+    h3{
+        color: black;
+    }
+}
+.cardCollapse{
+    border-color: black;
+    border-width: 0.2rem;
+    border-style: solid;
+    margin: 5rem 0;
+    box-shadow: 0 0 4rem 1.5rem rgba(0, 0, 0, 0.5);
 }

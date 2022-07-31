@@ -80,7 +80,7 @@
 	</header>
 	<main class="mainProductos">
 		<!-- TITULO -->
-		<h2 class="tituloProductos row justify-content-center animate__animated animate__flipInY">¡ Productos !</h2>
+		<h1 class="tituloProductos row justify-content-center animate__animated animate__flipInY">¡ Productos !</h1>
 		<!-- CARRUSEL -->
 		<article class="carrusel row">
 			<div id="carouselExampleDark" class="col-4 col-sm-5 col-md-6 col-lg-7 carousel carousel-dark slide" data-bs-ride="carousel">
@@ -139,34 +139,96 @@
 				</button>
 			</div>
 		</article>
+		<article class="socio row">
+			<div class="card text-center col-9 col-sm-7 col-md-5 col-lg-4 cardSocio">
+				<div class="card-header">
+					<h3>ATENCION</h3>
+				</div>
+				<div class="card-body">
+				  	<h5 class="card-title">¡ Hacete Socio !</h5>
+				  	<p class="card-text">Forma parte de nuestros clientes mas destacados y recibí inclreíbles descuentos exclusivos</p>
+					<button class="btn btn-primary buttonPromos" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample" aria-expanded="false" aria-controls="multiCollapseExample">Hacerme Socio</button>
+				</div>
+			</div>
+			<div class="collapse multi-collapse row collapseSocio" id="multiCollapseExample">
+				<div class="card text-center col-9 col-sm-7 col-md-5 col-lg-3 cardCollapse">
+					<div class="card-header">
+						<h3>CLIENTE 1.0</h3>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Beneficios..</h5>
+						<p class="card-text">Obtene descuentos del 5% de Lunes a Miercoles abonando con efectivo en productos seleccionados</p>
+						<button type="button" class="btn btn-primary buttonPromos">¡Lo Quiero!</button>
+					</div>
+					<div class="card-footer text-muted">
+						<p>$599/mes</p>
+					</div>
+				</div>
+				<div class="card text-center col-9 col-sm-7 col-md-5 col-lg-3 cardCollapse">
+					<div class="card-header">
+						<h3>CLIENTE 2.0</h3>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Beneficios..</h5>
+						<p class="card-text"> Obtene descuentos del 10% todos los dias con cualquier método de pago en productos seleccionados</p>
+						<button type="button" class="btn btn-primary buttonPromos">¡Lo Quiero!</button>
+					</div>
+					<div class="card-footer text-muted">
+						<p>$1499/mes</p>
+					</div>
+				</div>
+				<div class="card text-center col-9 col-sm-7 col-md-5 col-lg-3 cardCollapse">
+					<div class="card-header">
+						<h3>CLIENTE 3.0</h3>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Beneficios..</h5>
+						<p class="card-text">Obtene descuentos del 20% todos los dias en todos los productos + prioridad de atención</p>
+						<button type="button" class="btn btn-primary buttonPromos">¡Lo Quiero!</button>
+					</div>
+					<div class="card-footer text-muted">
+						<p>$2499/mes</p>
+					</div>
+				</div>
+			</div>
+		</article>
 	</main>
 	<footer class="footer container-fluid">
-		<div class="row justify-content-around">
-			<ul class="col-12 col-md-4 col-lg-3 nosotros">
-				<li><h3><strong>SOBRE ¡VIVE BIEN!</strong></h3></li>
-				<li><a href="../paginas/nosotros.html">NOSOTROS</a></li>
-				<li><a href="../paginas/contacto.html">CONTACTO</a></li>
-			</ul>
-			<ul class="col-12 col-md-4 col-lg-3 redes">
-				<li><h3><strong>SEGUINOS EN LAS REDES SOCIALES</strong></h3></li>
-				<li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
-				<li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
-			</ul>
-			<ul class="col-12 col-md-4 col-lg-3 newsletter">
-				<li><h3><strong>SUMATE A LA COMUNIDAD</strong></h3></li>
-				<li class="registro"><p>REGISTRATE A NUESTRO NEWSLETTER Y</p><p>ACCEDE A BENEFICIOS EXCLUSIVOS.</p></li>
-				<li><label for="email"></label>
-					<input type="email" name="email" placeholder=" Email" required>
-					<input type="submit" value="Enviar"></li>
-			</ul>         
-		</div>
-		<div class="row justify-content-center">
-			<img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="Tarjetas">
-		</div>
-		<div class="row justify-content-star">
-			<p class="copy col-12 col-lg-4">© Desarrollado por Jesus Ferreyra</p>
-		</div>
-	</footer>	
+        <div class="row justify-content-around linksFooter">
+            <div class="col-12 col-md-4 col-lg-3 nosotros">
+                <ul>
+                    <li><h3><strong>CONOCENOS UN POCO MAS</strong></h3></li>
+                    <li><a href="paginas/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="paginas/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 redes">
+                <ul>
+                    <li><h3><strong>SEGUINOS EN LAS REDES</strong></h3></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 newsletter">
+                <ul>
+                    <li><h3><strong>SUMATE A LA COMUNIDAD</strong></h3></li>
+                    <li class="registro"><p>REGISTRATE EN NUESTRO</p><p>NEWSLETTER Y RECIBÍ</p> <p>TODAS NUESTRAS NOTICIAS</p></li>
+                    <li><label for="email"></label>
+                        <div class="inputNewsletter">
+                            <input type="email" name="email" placeholder=" Email" required>
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </li>    
+                </ul> 
+            </div>        
+        </div>
+        <div class="row justify-content-center">
+            <img class="tarjetas col-4" src="../multimedia/tarjetas.png" alt="Tarjetas">
+        </div>
+        <div class="row justify-content-star">
+            <p class="copy col-12 col-lg-4">© Desarrollado por Jesus Ferreyra</p>
+        </div>
+    </footer>
 
 	<!-- LINK JS DE BS -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

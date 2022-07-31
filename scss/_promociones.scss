@@ -1,10 +1,37 @@
 /*---------------ESTILOS PROMOCIONES---------------*/
+.bodyPromociones{
+    background: url(../multimedia/fondo-promociones.jpg);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .promociones{
-    @extend .masPedidos;
+    font-family: map-get($fuentes, letra1);
+    margin: 4rem 0;
+    img{
+        @include imagenes(20rem, 20rem);
+        border-color: rgba(0, 0, 0, 0.3);
+        border-width: 0.1rem;
+        border-radius: 3%;
+        border-style: solid;
+        margin: 3rem 0;
+        justify-content: center;
+        transition: 0.4s;
+    }
+    h5{
+        font-weight: 400;
+        font-size: map-get($fuentes, tamano1);
+    }
+    p{
+        font-weight: 300;
+        font-size: map-get($fuentes, tamano4);
+    }
 }
 .tituloPromos{   
     @extend .tituloPedidos;
     font-size: 4rem;
+    color: white;
 }
 .buttonPromos{
     @extend .buttonPedidos;    
@@ -26,4 +53,8 @@
 }
 #multiCollapseExample3{
     @extend #multiCollapseExample1; 
+}
+.imagenProducto{
+    display: flex;
+    justify-content: center;
 }

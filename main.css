@@ -76,12 +76,31 @@ html {
   text-align: center;
   justify-content: center; }
 
-.masPedidos img:hover {
-  width: 27rem;
-  height: 27rem;
-  border-color: #50c8d7;
-  border-width: 0.5rem;
-  cursor: pointer; }
+.masPedidos, .promociones {
+  font-family: "Oswald", sans-serif;
+  margin: 4rem 0; }
+  .masPedidos img, .promociones img {
+    width: 20rem;
+    height: 20rem;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 0.1rem;
+    border-radius: 3%;
+    border-style: solid;
+    margin: 3rem 0;
+    justify-content: center;
+    transition: 0.4s; }
+    .masPedidos img:hover, .promociones img:hover {
+      width: 27rem;
+      height: 27rem;
+      border-color: #50c8d7;
+      border-width: 0.5rem;
+      cursor: pointer; }
+  .masPedidos h5, .promociones h5 {
+    font-weight: 400;
+    font-size: 2rem; }
+  .masPedidos p, .promociones p {
+    font-weight: 300;
+    font-size: 1.7rem; }
 
 .tituloPedidos, .tituloPromos {
   font-family: "Oswald", sans-serif;
@@ -192,16 +211,15 @@ html {
 
 .carrusel {
   justify-content: center;
-  margin: 8rem 0; }
+  margin: 5rem 0; }
 
 .carousel {
   height: 480px;
   width: 480px;
-  justify-content: center;
   border-color: black;
   border-width: 0.2rem;
   border-style: solid;
-  box-shadow: 0 0 4rem 1.5rem rgba(0, 0, 0, 0.5); }
+  justify-content: center; }
 
 .carousel-indicators {
   margin: 0; }
@@ -213,71 +231,9 @@ html {
 .mainProductos h5 {
   font-size: 2rem; }
 
-.socio {
-  justify-content: center;
-  margin: 5rem 0;
-  font-family: "Oswald", sans-serif; }
-  .socio h3 {
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: red; }
-  .socio h5 {
-    font-weight: 400;
-    font-size: 2.5rem; }
-  .socio p {
-    font-weight: 300;
-    font-size: 2rem; }
-
-.cardSocio {
-  border-color: black;
-  border-width: 0.2rem;
-  border-style: solid;
-  box-shadow: 0 0 4rem 1.5rem rgba(0, 0, 0, 0.5); }
-
-.collapseSocio {
-  justify-content: space-around;
-  margin: 5rem 0; }
-  .collapseSocio h3 {
-    color: black; }
-
-.cardCollapse {
-  border-color: black;
-  border-width: 0.2rem;
-  border-style: solid;
-  margin: 5rem 0;
-  box-shadow: 0 0 4rem 1.5rem rgba(0, 0, 0, 0.5); }
-
 /*---------------ESTILOS PROMOCIONES---------------*/
-.bodyPromociones {
-  background: url(../multimedia/fondo-promociones.jpg);
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.promociones, .masPedidos {
-  font-family: "Oswald", sans-serif;
-  margin: 4rem 0; }
-  .promociones img, .masPedidos img {
-    width: 20rem;
-    height: 20rem;
-    border-color: rgba(0, 0, 0, 0.3);
-    border-width: 0.1rem;
-    border-radius: 3%;
-    border-style: solid;
-    margin: 3rem 0;
-    justify-content: center;
-    transition: 0.4s; }
-  .promociones h5, .masPedidos h5 {
-    font-weight: 400;
-    font-size: 2rem; }
-  .promociones p, .masPedidos p {
-    font-weight: 300;
-    font-size: 1.7rem; }
-
 .tituloPromos {
-  font-size: 4rem;
-  color: white; }
+  font-size: 4rem; }
 
 #multiCollapseExample1, #multiCollapseExample2, #multiCollapseExample3 {
   font-family: "Oswald", sans-serif;
@@ -288,10 +244,6 @@ html {
     text-decoration: none; }
   #multiCollapseExample1 li, #multiCollapseExample2 li, #multiCollapseExample3 li {
     list-style-type: none; }
-
-.imagenProducto {
-  display: flex;
-  justify-content: center; }
 
 /*---------------ESTILOS NOSOTROS---------------*/
 .tituloNosotros {
@@ -314,7 +266,7 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6";
   grid-gap: 4rem;
   margin: 10rem; }
 
@@ -402,7 +354,7 @@ html {
 
 .extra {
   text-decoration: none;
-  padding: 7rem 0;
+  padding: 2rem 0;
   justify-content: center; }
 
 /*---------------RESPONSIVE HOME---------------*/
@@ -420,61 +372,15 @@ html {
   .mapa2 {
     width: 20rem;
     height: 20rem; }
+  .footer {
+    height: 50rem; }
   .tarjetas {
-    display: none; }
-  .nosotros h3 {
-    display: flex;
-    justify-content: center; }
-  .nosotros a {
-    display: flex;
-    justify-content: center; }
-  .redes h3 {
-    display: flex;
-    justify-content: center; }
-  .redes a {
-    display: flex;
-    justify-content: center; }
-  .newsletter h3 {
-    display: flex;
-    justify-content: center; }
-  .newsletter p {
-    display: flex;
-    justify-content: center; }
-  .inputNewsletter {
-    display: flex;
-    justify-content: center; }
-  .whatsapp {
-    right: 1rem;
-    bottom: 1rem; } }
+    display: none; } }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .logo {
     width: 8rem;
-    height: 6rem; }
-  .nosotros h3 {
-    display: flex;
-    justify-content: center; }
-  .nosotros a {
-    display: flex;
-    justify-content: center; }
-  .redes h3 {
-    display: flex;
-    justify-content: center; }
-  .redes a {
-    display: flex;
-    justify-content: center; }
-  .newsletter h3 {
-    display: flex;
-    justify-content: center; }
-  .newsletter p {
-    display: flex;
-    justify-content: center; }
-  .newsletter label {
-    display: flex;
-    justify-content: center; }
-  .inputNewsletter {
-    display: flex;
-    justify-content: center; } }
+    height: 6rem; } }
 
 /*---------------RESPONSIVE PRODUCTOS---------------*/
 @media screen and (max-width: 575px) {
@@ -509,7 +415,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
     grid-gap: 4rem;
     margin: 10rem; } }
 
